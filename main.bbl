@@ -1,0 +1,89 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\urlprefix}{}
+\providecommand{\doiprefix}{doi: }
+
+\bibitem[{Aizenberg and Schuman(2011)Aizenberg, M. and Schuman, E. M.}]{aizenbergCerebellarDependentLearningLarval2011}
+\textbf{\color{eLifeMediumGrey} Aizenberg M}, Schuman EM.
+\newblock Cerebellar-Dependent Learning in Larval Zebrafish.
+\newblock Journal of Neuroscience.  2011; 31(24):8708--8712.
+\newblock \urlprefix\url{https://www.jneurosci.org/lookup/doi/10.1523/JNEUROSCI.6565-10.2011}, \href{10.1523/JNEUROSCI.6565-10.2011}{\doiprefix \detokenize{10.1523/JNEUROSCI.6565-10.2011}}.
+
+\bibitem[{Burgess and Granato(2007)Burgess, Harold A. and Granato, Michael}]{Burgess2007}
+\textbf{\color{eLifeMediumGrey} Burgess HA}, Granato M.
+\newblock Evidence for a Fast Switch in the Mode of Motor Output in a Vertebrate Locomotor Network.
+\newblock Journal of Neuroscience.  2007; 27(30):759--769.
+\newblock \href{10.1523/JNEUROSCI.1373-07.2007}{\doiprefix \detokenize{10.1523/JNEUROSCI.1373-07.2007}}.
+
+\bibitem[{Dempsey et~al.(2022)Dempsey, William P. and Du, Zhuowei and Nadtochiy, Anna and Smith, Colton D. and Czajkowski, Karl and Andreev, Andrey and Robson, Drew N. and Li, Jennifer M. and Applebaum, Serina and Truong, Thai V. and Kesselman, Carl and Fraser, Scott E. and Arnold, Don B.}]{dempseyRegionalSynapseGain2022}
+\textbf{\color{eLifeMediumGrey} Dempsey WP}, Du Z, Nadtochiy A, Smith CD, Czajkowski K, Andreev A, Robson DN, Li JM, Applebaum S, Truong TV, Kesselman C, Fraser SE, Arnold DB.
+\newblock Regional Synapse Gain and Loss Accompany Memory Formation in Larval Zebrafish.
+\newblock Proceedings of the National Academy of Sciences.  2022; 119(3):e2107661119.
+\newblock \urlprefix\url{https://pnas.org/doi/full/10.1073/pnas.2107661119}, \href{10.1073/pnas.2107661119}{\doiprefix \detokenize{10.1073/pnas.2107661119}}.
+
+\bibitem[{Harmon et~al.(2017)Harmon, Thomas C and Magaram, Uri and McLean, David L and Raman, Indira M}]{harmonDistinctResponsesPurkinje2017}
+\textbf{\color{eLifeMediumGrey} Harmon TC}, Magaram U, McLean DL, Raman IM.
+\newblock Distinct Responses of {{Purkinje}} Neurons and Roles of Simple Spikes during Associative Motor Learning in Larval Zebrafish.
+\newblock eLife.  2017; 6:e22537.
+\newblock \urlprefix\url{https://elifesciences.org/articles/22537}, \href{10.7554/eLife.22537}{\doiprefix \detokenize{10.7554/eLife.22537}}.
+
+\bibitem[{Hinz et~al.(2013)Hinz, Flora I. and Aizenberg, Mark and Tushev, Georgi and Schuman, Erin M.}]{hinzProteinSynthesisDependentAssociative2013}
+\textbf{\color{eLifeMediumGrey} Hinz FI}, Aizenberg M, Tushev G, Schuman EM.
+\newblock Protein {{Synthesis-Dependent Associative Long-Term Memory}} in {{Larval Zebrafish}}.
+\newblock The Journal of Neuroscience.  2013; 33(39):15382--15387.
+\newblock \urlprefix\url{https://www.jneurosci.org/lookup/doi/10.1523/JNEUROSCI.0560-13.2013}, \href{10.1523/JNEUROSCI.0560-13.2013}{\doiprefix \detokenize{10.1523/JNEUROSCI.0560-13.2013}}.
+
+\bibitem[{Hughes et~al.(1998)Hughes, Ann and Feiler, Rachel and Fadool, James M.}]{Hughes1998}
+\textbf{\color{eLifeMediumGrey} Hughes A}, Feiler R, Fadool JM.
+\newblock Development of Visually Elicited Escape Behavior in Larval Zebrafish.
+\newblock Journal of Neurobiology.  1998; 37(2):275--286.
+\newblock \href{10.1002/(SICI)1097-4695(19981105)37:2<275::AID-NEU8>3.0.CO;2-0}{\doiprefix \detokenize{10.1002/(SICI)1097-4695(19981105)37:2<275::AID-NEU8>3.0.CO;2-0}}.
+
+\bibitem[{Marques et~al.(2018)Marques, Joao C. and Lackner, Sebastian and Felix, Ruben and Orger, Michael B.}]{Marques2018}
+\textbf{\color{eLifeMediumGrey} Marques JC}, Lackner S, Felix R, Orger MB.
+\newblock Structure of the Zebrafish Locomotor Repertoire Revealed with Unsupervised Behavioral Clustering.
+\newblock Current Biology.  2018; 28(2):181--195.
+\newblock \href{10.1016/j.cub.2017.12.002}{\doiprefix \detokenize{10.1016/j.cub.2017.12.002}}.
+
+\bibitem[{Martins et~al.(2016)Martins, Ana L. and G{"o}nczy, Ildik{\'o} and Ribeiro, Ana and Orger, Michael B.}]{Martins2016}
+\textbf{\color{eLifeMediumGrey} Martins AL}, G{"o}nczy I, Ribeiro A, Orger MB.
+\newblock High-throughput automated behavioural analysis of larval zebrafish.
+\newblock Journal of Visualized Experiments.  2016; 118:e54872.
+\newblock \urlprefix\url{https://www.jove.com/t/54872}, \href{10.3791/54872}{\doiprefix \detokenize{10.3791/54872}}.
+
+\bibitem[{Matsuda et~al.(2017)Matsuda, Koji and Yoshida, Masayuki and Kawakami, Koichi and Hibi, Masahiko and Shimizu, Takashi}]{matsudaGranuleCellsControl2017}
+\textbf{\color{eLifeMediumGrey} Matsuda K}, Yoshida M, Kawakami K, Hibi M, Shimizu T.
+\newblock Granule Cells Control Recovery from Classical Conditioned Fear Responses in the Zebrafish Cerebellum.
+\newblock Scientific Reports.  2017; 7(1):11865.
+\newblock \urlprefix\url{https://www.nature.com/articles/s41598-017-10794-0}, \href{10.1038/s41598-017-10794-0}{\doiprefix \detokenize{10.1038/s41598-017-10794-0}}.
+
+\bibitem[{Najac et~al.(2023)Najac, Marion and McLean, David L. and Raman, Indira M.}]{najacSynapticVarianceAction2023}
+\textbf{\color{eLifeMediumGrey} Najac M}, McLean DL, Raman IM.
+\newblock Synaptic Variance and Action Potential Firing of Cerebellar Output Neurons during Motor Learning in Larval Zebrafish.
+\newblock Current Biology.  2023; 33(16):3299--3311.e3.
+\newblock \urlprefix\url{https://linkinghub.elsevier.com/retrieve/pii/S0960982223008308}, \href{10.1016/j.cub.2023.06.045}{\doiprefix \detokenize{10.1016/j.cub.2023.06.045}}.
+
+\bibitem[{Portugues et~al.(2011)Portugues, Ruben and Feierstein, Claudia E. and Engert, Florian and Orger, Michael B.}]{Portugues2011}
+\textbf{\color{eLifeMediumGrey} Portugues R}, Feierstein CE, Engert F, Orger MB.
+\newblock Whole-Brain Functional Imaging in Freely Behaving Zebrafish Larvae with Light-Sheet Microscopy.
+\newblock Nature Methods.  2011; 8(8):1--9.
+\newblock \href{10.1038/nmeth.2099}{\doiprefix \detokenize{10.1038/nmeth.2099}}.
+
+\bibitem[{Prober et~al.(2006)Prober, David A. and Rihel, Jason and Onah, Anthonia A. and Sung, Roderick J. and Schier, Alexander F.}]{Prober2006}
+\textbf{\color{eLifeMediumGrey} Prober DA}, Rihel J, Onah AA, Sung RJ, Schier AF.
+\newblock Sleep Regulation in Zebrafish.
+\newblock Science.  2006; 312(5777):1772--1775.
+\newblock \href{10.1126/science.1122622}{\doiprefix \detokenize{10.1126/science.1122622}}.
+
+\bibitem[{Wee et~al.(2019)Wee, Caroline L. and Song, Erin and Ulucan, Can and Wong, Sandy and Engert, Florian and Kunes, Samuel}]{Wee2019}
+\textbf{\color{eLifeMediumGrey} Wee CL}, Song E, Ulucan C, Wong S, Engert F, Kunes S.
+\newblock Optovin and TRPA1b Mediate an Aversive Response to Violet Light in Larval Zebrafish.
+\newblock Current Biology.  2019; 29(22):1--12.
+\newblock \href{10.1016/j.cub.2019.09.050}{\doiprefix \detokenize{10.1016/j.cub.2019.09.050}}.
+
+\bibitem[{Westerfield(2007)Westerfield, Monte}]{Westerfield2007}
+\textbf{\color{eLifeMediumGrey} Westerfield M}.
+\newblock The Zebrafish Book: A Guide for the Laboratory Use of Zebrafish (Danio rerio).
+\newblock Eugene, OR: University of Oregon Press; 2007.
+
+\end{thebibliography}

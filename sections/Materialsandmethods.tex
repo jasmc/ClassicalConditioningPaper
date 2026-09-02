@@ -1,0 +1,280 @@
+\section{Materials and methods}
+
+\subsection{Animals and husbandry}
+
+All experiments were performed on larval zebrafish (\textit{Danio rerio}) maintained under standard laboratory conditions. For behavioral conditioning assays without concurrent brain imaging, we used nacre (mitfa\textsuperscript{\(-/-\)}) larvae and, in some experiments, nacre larvae expressing pan-neuronal GCaMP (Tg(elavl3:GFF); Tg(10xUAS:GCaMP6fEF05)). For experiments involving chemogenetic ablation of Purkinje cells, nacre larvae carrying Tg(ca8:epNtr-tagRFP) were used, with Ntr\textsuperscript{\(+\)} and Ntr\textsuperscript{\(-\)} siblings tested in parallel.
+% TODO clearly define the genotypes used in each experiment.
+% TODO In Sup. Fig. with original paradigm, where the no-optovin control is mentioned, state that the larvae were of the Tübingen (TU) strain.
+% TODO For the original no-optovin control experiment: Larvae were raised exclusively in E3 medium, which was exchanged daily after hatching. To provide nutritional supplementation and promote activity, a few milliliters of live rotifers (Brachionus plicatilis, cultured as in \citet{Martins2016}) were added daily after the medium change. This medium was replaced daily and the stock was stored for up to four days in an open container to ensure adequate oxygenation.
+% TODO Add this information for the original experiment in the Sup. Fig. with the no-optovin control.
+
+Unless otherwise indicated, larvae were obtained from natural pairwise or group matings of adult breeders. Embryos were collected in the morning and kept in groups of 80--100 per 150~mm Petri dish containing E3 embryo medium (\SI{5}{\milli\Molar} NaCl, \SI{0.17}{\milli\Molar} KCl, \SI{0.33}{\milli\Molar} CaCl\textsubscript{2}, \SI{0.33}{\milli\Molar} MgSO\textsubscript{4}; pH adjusted to 7.2 with HCl) at \SI{28}{\degreeCelsius} under a 14/10~h light--dark cycle starting at 08:00, following standard protocols \citep{Westerfield2007,Martins2016}. The sex of larvae is not morphologically distinguishable at the ages used (\SIrange{6}{9}{\dpf}). % chktex 8
+% TODO In some experiments (those requiring screening for fluorescence-positive larvae), the density was not controlled.
+
+From \SI{0}{\dpf} to \SI{3}{\dpf}, larvae were maintained in standard E3 medium. From \SI{3}{\dpf} onward, larvae were reared in ``green water''. Green water was prepared by diluting one volume of a stock co-culture of rotifers (\textit{Brachionus plicatilis}, cultured as in \citet{Martins2016}; \textasciitilde900~rotifers/mL) and microalgae (e.g. \textit{Chlorella} sp.) in four volumes of fresh E3. This medium was replaced daily, and the stock was stored for up to four days in an open container at room temperature to ensure adequate oxygenation.
+
+% TODO Add this information for the delay and trace experiments done in the initial experiments.
+
+For pharmacological experiments with the NMDA receptor antagonist MK-801, larvae had the genetic background mitfa\textsuperscript{\(-/-\)}; Tg(elavl3:GFF); Tg(10xUAS:\hspace{0pt}GCaMP6fEF05). In the delay-conditioning experiment, larvae were \SIrange{5}{7}{\dpf} and tested in E3/Tris-HCl containing \SI{0.2}{\percent} DMSO (solvent for optovin and MK-801) and MK-801 at final concentrations of 0, 10, or \SI{100}{\micro\Molar}. Prior to training, fish were incubated for \SI{30}{\minute} in their respective test solutions under constant illumination from the frontal LEDs. In the trace-conditioning experiment, larvae were \SIrange{6}{7}{\dpf}, had the same genetic background, and were tested in E3/Tris-HCl containing 0 or \SI{100}{\micro\Molar} MK-801 without prior incubation.
+
+% TODO Add this information for the ca8 ablation experiment.
+% TODO ca8 fish were incubated at 4~\dpf overnight in small Petri dishes, without controlling larval density.
+
+For long-term memory experiments with the protein synthesis inhibitor puromycin, subjects were \SIrange{5}{7}{\dpf} larvae. Their genetic background was mitfa\textsuperscript{\(-/-\)}; Tg(elavl3:GFF); and Tg(10xUAS:GCaMP6fEF05). Fish were tested either in control conditions or in the presence of \SI{5}{\milli\gram\per\liter} puromycin, which was added at the start of the experiment without pre-incubation and maintained until the end of the retention interval \citep{hinzProteinSynthesisDependentAssociative2013}.
+
+% TODO Add this information for the imaging experiments.
+
+All animal husbandry and experimental procedures conformed to the European Union Directive 2010/63/EU on the protection of animals used for scientific purposes. Protocols were reviewed and approved by the Champalimaud Foundation Ethics Committee and the Portuguese national authority for animal welfare, Direção-Geral de Alimentação e Veterinária (DGAV; permit no.~019774, in accordance with former Directive 86/609/EEC).
+
+
+\subsection{Animal preparation}
+
+For experiments, larvae were either head restrained on the day of testing or embedded the day before and maintained overnight. Larvae were immobilized in \SIrange{1.5}{2}{\percent} (w/v) low-melting-point agarose (Fisher Bioreagents) dissolved in E3 medium
+buffered with \SI{10}{\milli\Molar} Tris-HCl (E3/Tris-HCl), following established protocols \citep{Portugues2011}. Embedding was performed in \SI{35}{\milli\meter} Petri dishes whose base was coated with SYLGARD\texttrademark~184 elastomer (Dow Corning). After the agarose solidified, the dish was filled with E3/Tris-HCl medium. Agarose surrounding the tail and eyes was carefully removed with a scalpel to permit unrestricted tail and eye movement. Stainless steel insect pins (0.20~mm, Austerlitz 01.03.04) were used to secure the agarose to the SYLGARD-coated dish base, preventing drift. Immediately before the experiment started, the E3/Tris-HCl medium was replaced with E3/Tris-HCl containing \SI{10}{\micro\Molar} optovin (Alomone Labs) and \SI{0.1}{\percent} (v/v) dimethyl sulfoxide (DMSO; Sigma-Aldrich), and larvae were positioned on the acrylic platform of the behavioral setup, with the body axis aligned to the LED array and the tail centered in the camera field of view. All experiments were performed during the light phase of the 14/10~h light--dark cycle.
+% todo say "as shown in Fig. 1 A"
+
+
+\subsection{Behavioral setup}
+
+All experiments were conducted in four identical, custom-built behavioral setups housed inside a light-proof enclosure to prevent external light contamination. Each setup consisted of a transparent acrylic platform on which the embedded larva was positioned and an array of 3 pairs of light-emitting diodes (LEDs) mounted \textasciitilde\SI{6}{\centi\meter} surrounded the fish.
+% todo say "as shown in Fig. 1 A"
+
+Two setups used white LEDs (Multicomp Pro, MP000435) and two used red LEDs emitting at \SI{660}{\nano\meter} (Kingbright, L-1334SRT). The white LEDs were driven with a \SI{51}{\ohm} series resistor to ground, and the red LEDs with a \SI{200}{\ohm} series resistor. The luminous intensity of the CS LEDs was not further calibrated.
+
+For delivery of the US, each setup was equipped with a high-power 1-A violet LED emitting at \SIrange{405}{410}{\nano\meter} (LED Engin, LZ1-10UB00-01U8). These LEDs were driven by dedicated constant-current LED drivers (LEDdynamics, 3023-D-E-1000) gated by control signals from the microcontrollers. Output power was calibrated with a photodiode power meter to \textasciitilde\SI{40}{\milli\watt} measured at \SI{2.5}{\centi\meter} from the LED surface, and pulse-width modulation was used to ensure stable light intensity across trials.
+
+Larval behavior was monitored from above with an infrared-sensitive high-speed camera (Allied Vision Mako U-029B) fitted with a \SI{16}{\milli\meter} fixed-focal-length lens (Edmund Optics 59-870) and an \SI{830}{\nano\meter} long-pass filter (Thorlabs FGL830) to block visible light from the CS and US LEDs. The fish were illuminated from below by an array of \SI{850}{\nano\meter} infrared LEDs (Würth Elektronik 15400385A3590), with the IR light passing through diffuser paper to provide homogeneous background illumination for tail tracking.
+
+All four setups were controlled from a single host computer via dedicated external microcontroller boards (Arduino Uno R3). In each rig, three 8-bit shift registers (e.g. SN74HC595) provided independent control over the 24 CS LEDs. The timing and gating of the violet US LEDs were likewise controlled by the Arduinos through the LED driver inputs. Custom C\# software (Sardine framework) handled communication with the microcontrollers, acquisition of camera frames, and real-time logging of stimulus events. The correct operation of all LEDs and cameras was verified daily before experiments.
+
+% todo show scheme with the exact dimensions of the setup
+
+
+\subsection{Conditioned and unconditioned stimuli}
+
+% todo measure the luminous power of the CS LEDs?
+% todo confirm references of the LEDs used
+% todo confirm the wavelength range
+% todo Scheme of setups
+% todo	Relative positions of all LEDs
+% todo	Angle and distance of the UV LED
+% todoBlack tube used to calibrate UV
+
+
+
+\subsubsection{Conditioned stimulus}
+
+In all experiments, the conditioned stimulus (CS) was delivered using three pairs of LEDs: one pair in front of the larva and one pair on each side. The CS consisted of a \SI{10}{\second} illumination of the right-side LED pair. During the habituation phase, two CS presentations were instead delivered from the left side to habituate larvae to CS-like stimuli.
+
+Outside CS periods, the front pair provided constant basal illumination. During a CS, only a single lateral pair was active at any given time and the front pair was switched off, minimizing abrupt changes in luminance at CS onset and offset. Exactly two LEDs were illuminated at a time, ensuring that the fish were never in complete darkness. Maintaining continuous illumination avoids dark-induced reductions in arousal or sleep-like states \citep{Prober2006} and prevents the CS from being confounded with abrupt light--dark transitions that can elicit large-angle startle turns \citep{Burgess2007}.
+
+Two LED colors were used across experiments. In two setups, the CS was generated with white LEDs (400--800~nm), which fall within the optimal spectral-sensitivity range of larval zebrafish photoreceptors and thus provide a salient visual stimulus \citep{Hughes1998}. In the remaining setups, red LEDs emitting at \SI{660}{\nano\meter} were used. Red light lies largely outside the main sensitivity range of larval zebrafish, making it perceptually weaker, but it is readily separable from the green fluorescence of GCaMP (\textasciitilde\SI{510}{\nano\meter}) in imaging experiments, thereby minimizing optical interference. We therefore tested the conditioning paradigm with both white and red CSs: white light to maximize behavioral salience in non-imaging experiments, and red light to evaluate the feasibility of using a spectrally separated CS compatible with whole-brain GCaMP imaging.
+
+
+
+\subsubsection{Unconditioned stimulus}
+
+The unconditioned stimulus (US) consisted of a brief violet-light pulse delivered in the presence of optovin. In all conditioning experiments, larvae were immersed in E3 medium buffered with \SI{10}{\milli\Molar} Tris-HCl (E3/Tris-HCl) containing \SI{10}{\micro\Molar} optovin (Alomone Labs) and \SI{0.1}{\percent} (v/v) dimethyl sulfoxide (DMSO; Sigma-Aldrich). The US was generated by a high-power violet LED emitting at \SIrange{405}{410}{\nano\meter} (LED Engin, LZ1-10UB00-01U8) positioned in front of the larva and driven by a constant-current driver as described above. Except during the optimization experiments described below, US presentations during conditioning consisted of \SI{100}{\milli\second} violet-light pulses (\textit{long US}) or \SI{50}{\milli\second} pulses (\textit{short US}) during the priming, pre-training, and testing phases.
+
+\paragraph{Optovin stimulus optimization}
+
+In pilot experiments, we qualitatively compared unbuffered E3 medium with E3 buffered with \SI{10}{\milli\Molar} Tris-HCl. For each condition, we monitored medium pH and the visible stability of optovin over the duration of an experimental session (more than \SI{3}{\hour}), and we assessed whether larvae remained suitable for experiments lasting several hours. Based on these tests, we selected \SI{10}{\micro\Molar} optovin in E3 buffered with \SI{10}{\milli\Molar} Tris-HCl as the standard medium for conditioning experiments, combined with violet-light pulses of either \SI{50}{\milli\second} or \SI{100}{\milli\second} as the US.
+% April 2021
+% Optovin degrades and changes pH.
+% At the beginning of the day, 10 μM optovin had a pH of 7.47, measured ~1 h after preparation.
+% More transparent solution is optovin solution that went through trace conditioning (1000-ms trace period; first round of trace experiments; fixed duration of US) and then one block of delay with a different fish had a pH of 8.22 by the end of the day.
+% (The smaller tube was used just to measure the pH.)
+% The more yellowish solution is optovin prepared with the other one but that was always kept away from light and never in contact with fish.
+% At the end of the day its pH was around 8.68.
+% The responses of the fish in these experiments designed to test the degradation of optovin with time (?) showed that some kind of degradation might be really happening, explaining the increasingly worse behavior throughout the long experiments. Instead of degradion of optovin, the too-high pH might explain why fish dont respond reliably.
+% On the 3rd and 4th May 2021, did some trace conditioning experiments using a 500-ms trace period and optovin solution buffered with 10 mM Tris-HCl (concentration before adding optovin). The fish seemed to be considerably healthier throughout the ~6-h experiment. They were very active throughout and responded almost 100\% of the times to optovin, only missing in the last block very few stimuli.
+
+
+To establish suitable parameters for using optovin as the US, we systematically varied violet-light pulse duration, optovin concentration, and medium composition. Each condition was tested in separate groups of \SIrange{8}{9}{\dpf} larvae drawn from different clutches. Protocols consisted of 50 violet-light pulses delivered at \SIrange{1.5}{2.5}{\minute} intervals, matching the planned number and spacing of US presentations during conditioning.
+
+We tested violet-light pulse durations of \SI{10}{\milli\second}, \SI{50}{\milli\second}, and \SI{100}{\milli\second} in the presence of 0, \SI{5}{\micro\Molar}, or \SI{10}{\micro\Molar} optovin, as well as vehicle-only controls. For each pulse, tail behavior was quantified in a post-stimulus window by measuring the occurrence and intensity of tail movements. In addition, we quantified spontaneous tail movements in a pre-stimulus baseline window to assess how repeated optovin stimulation affected ongoing locomotor activity.
+
+
+\subsection{Classical conditioning protocols}
+
+% todo Show schemes of all protocols
+% todo Protocol Makers
+% todo Histograms showing that the multiple controls provided really randomly unpaired CS and US
+
+\subsubsection{General structure}
+
+% todo see Sup. Fig. 2 A
+All conditioning experiments followed a structured sequence of phases designed to establish baseline behavior, induce associative learning, and assess CRs. Over multiple iterations of experiments, we developed a general protocol structure that optimized behavioral performance and accommodated imaging-compatible genotypes. The experiment was divided into four phases: priming/habituation, pre-training, training, and testing.
+
+-----
+% This was moved from the Results to here
+% Describe priming/habituation structure and short-US placement
+To promote an active behavioral state similar to that achieved during conditioning, the experimental protocols started with a priming phase of 15 short US presentations, delivered before the pre-train phase. The habituation to the CS happened during the priming by interleaving CS-like stimuli with the short USs. Short USs were also interspersed throughout both the pre-train and testing phases to prevent a reduction in the baseline movement rate during these periods of the experiment critical for assessing conditioning.
+% todo (DETAILED PROTOCOL Sup. Fig. 2 A)
+% todo (Thesis Figure 2.8)
+-----
+
+The priming/habituation and pre-training phases together comprised 14 CSs and 18 USs of \SI{50}{\milli\second} each, delivered at \textasciitilde\SI{1}{\minute} intervals, with consecutive USs spaced \textasciitilde\SI{2}{\minute} apart. The initial 15 USs interleaved with 4 CSs (including CSs from the left side) constituted the priming/habituation phase, which was designed to elevate and stabilize baseline locomotor activity and to habituate larvae to CS-like stimuli.
+
+The subsequent 10 CSs and 3 USs formed the pre-training phase, in which a \SI{50}{\milli\second} US was delivered every 2--3 CSs to further maintain an active behavioral state while measuring baseline CS responses.
+
+The training phase consisted of 50 CS presentations, of which 46 were paired with a \SI{100}{\milli\second} US (delay or trace conditioning) and 4 were CS-only catch trials (see below). Consecutive CSs and consecutive USs were spaced \textasciitilde\SI{2}{\minute} apart.
+During the training phase of all delay and trace conditioning protocols, larvae experienced 50 CS presentations. 46 of these CSs were paired with a \SI{100}{\milli\second} US and 4 were CS-only catch trials. The catch trials occurred on CS trials 11, 25, 39, and 45. The first catch trial was therefore presented only after at least 10 CS--US pairings, based on the observation that CRs emerged within this window in pilot delay-conditioning experiments. Catch trials were interspersed with paired CS--US trials rather than presented consecutively, minimizing extinction of the CR. Within each batch of protocols, catch trials were scheduled at identical times relative to the start of the experiment across matched delay, trace, and control protocols, allowing direct comparison of behavior under different CS--US contingencies.
+
+The testing phase mirrored the pre-training structure but was extended to 30 CS presentations interleaved with 14 \SI{50}{\milli\second} USs (one US every 2--3 CSs), allowing CR expression and extinction to be monitored over a larger number of CSs.
+
+After the last CS of the testing phase, a final \SI{500}{\milli\second} US was delivered as a health and viability check.
+
+\subsubsection{Training}
+% Delay and trace conditioning
+During the training phase of all conditioning protocols, larvae experienced 50 CS presentations. In delay and trace conditioning, 46 of these CSs were paired with a \SI{100}{\milli\second} US, and 4 were CS-only catch trials (see below).
+
+In the delay-conditioning paradigm, the US onset occurred \SI{9}{\second} after CS onset, lasting \SI{100}{\milli\second}.
+
+Three trace protocols were tested: (i) an incremental-trace protocol (incTrace) in which the trace interval was \SI{0.5}{\second} for the first 10 paired training trials, \SI{3}{\second} for the last 10 paired trials, and increased linearly from \SI{0.5}{\second} to \SI{3}{\second} across the intermediate trials; (ii) a constant-\SI{3}{\second} trace protocol (3sTrace), in which the interval between CS offset and US onset was fixed at \SI{3}{\second} for all paired trials; and (iii) a constant-\SI{10}{\second} trace protocol (10sTrace), in which the US occurred \SI{10}{\second} after CS offset.
+
+Delay conditioning was performed in \SIrange{6}{9}{\dpf} larvae, incremental-trace conditioning in \SIrange{6}{8}{\dpf} larvae, and constant-\SI{3}{\second} and constant-\SI{10}{\second} trace conditioning in \SI{6}{\dpf} and \SI{7}{\dpf} larvae, allowing comparison with established larval fear- and aversive-conditioning paradigms \citep{aizenbergCerebellarDependentLearningLarval2011,matsudaGranuleCellsControl2017}.
+
+\subsubsection{Control protocols}
+
+Unpaired control protocols were designed to match the overall number and duration of CS and US presentations in the corresponding delay and trace conditioning protocols while eliminating any systematic temporal contingency between CS and US. To achieve this, the absolute timing of all US presentations relative to the start of the experiment was kept identical to that in the matched delay or trace protocol. By contrast, the timing of CS presentations during the training phase was randomized independently for each control protocol.
+
+Control protocols were generated in batches using a custom Python script. For each batch, a delay protocol was first created; the US timings from the 46 CS--US paired trials in the training phase were then reused to construct the corresponding trace and control protocols. In control protocols, the 46 CS presentations in the training phase were redistributed over the same time window with the following constraints: (i) a minimum interval of \SI{5}{\second} between consecutive CS onsets and (ii) a minimum interval of \SI{0.5}{\second} between any CS onset and any US onset. CS and US could  overlap by chance, but no fixed temporal relationship was imposed. Nearly every control fish was tested with a unique randomized CS schedule, and subsequent analyses confirmed that neither individual control protocols nor their combination exhibited any learnable temporal structure between CS and US.
+
+US times were not themselves randomized. Randomizing US timings (alone or together with CS timings) would have led to clusters of USs separated by less than \SI{1.5}{\minute}, which was avoided because the optovin US is strongly aversive and repeated closely spaced presentations can markedly alter locomotor state. By maintaining the same US schedule as in the delay and trace protocols while randomizing CS onsets only, control conditions matched overall US exposure without introducing excessive US clustering.
+
+Subsequent analysis confirmed that these control protocols, whether assessed individually or as a group, lacked any consistent temporal structure between CS and US that could support associative learning.
+% todo show these plots
+
+\subsubsection{Priming/habituation and pre-training}
+
+A priming/habituation phase was introduced before pre-training to establish a high and stable baseline level of locomotor activity and to habituate larvae to CS-like visual stimuli. Together, the priming/habituation and pre-training phases comprised 14 CSs and 18 USs of \SI{50}{\milli\second} each, delivered at \textasciitilde\SI{1}{\minute} intervals, with consecutive USs spaced \textasciitilde\SI{2}{\minute} apart.
+
+The priming/habituation phase consisted of the first 15 USs interleaved with 4 CSs. During this phase, CSs were presented both from the right (training CS) and from the left, exposing larvae to CS-like stimuli that did not consistently predict the US and thereby reducing the likelihood of startle responses or premature associative learning. The subsequent pre-training phase comprised 10 CSs and 3 \SI{50}{\milli\second} USs, with one US delivered every 2--3 CSs. Inter-stimulus intervals in pre-training were shortened to \textasciitilde\SI{1}{\minute} compared to the \textasciitilde\SI{3}{\minute} ITIs of the original paradigm, reducing total experiment duration while maintaining an active behavioral state.
+
+The testing phase mirrored the structure of pre-training but was extended to 30 CSs interleaved with 14 \SI{50}{\milli\second} USs, again with one US presented every 2--3 CSs. This design allowed the full time course of CR expression and extinction to be measured across a larger number of CS trials. After the final CS of the testing phase, a \SI{500}{\milli\second} US was delivered as a health and viability check; only larvae that exhibited at least one tail movement within \SI{5}{\second} of this final US were retained for analysis (see Inclusion criteria).
+
+\subsubsection{Long-term memory and puromycin}
+
+Long-term memory (LTM) experiments with puromycin used \SIrange{5}{7}{\dpf} larvae of the genetic background mitfa\textsuperscript{\(-/-\)}; Tg(elavl3:GFF); Tg(10xUAS:GCaMP6fEF05). Fish were tested either in control conditions or in the presence of \SI{5}{\milli\gram\per\liter} puromycin, which was added at the start of the experiment without pre-incubation and maintained until the end of the retention interval. The delay-conditioning paradigm described above was modified in several respects. First, the initial training phase was converted from a massed to a spaced configuration: after every 10 training trials, a \SI{10}{\minute} break was inserted in addition to the standard \textasciitilde\SI{2}{\minute} inter-trial interval, and catch trials were introduced during training at trials 16, 25, 36, and 45. Training and testing were separated by a minimum \SI{3}{\hour} retention interval, during which larvae were kept in the dark and undisturbed. Immediately before LTM testing, the medium was exchanged for fresh \SI{10}{\micro\Molar} optovin in E3/Tris-HCl without puromycin, while visual stimulation was minimized. Prior to LTM testing, a priming phase was introduced, consisting of four \SI{100}{\milli\second} US presentations spaced \textasciitilde\SI{2}{\minute} apart, beginning \SI{10}{\minute} after the front LEDs were turned on. The testing phase followed the delay-conditioning procedure described above. After testing, larvae underwent a re-training phase of 30 trials identical to the original (non-spaced) delay paradigm, with two catch trials at trials 11 and 25. In addition to the general inclusion criteria defined below, only larvae that exhibited at least one tail movement within \SI{5}{\second} of every US during the re-training phase were included in the final analysis. Normalized vigor was calculated using a CR interval of \SIrange{0}{9}{\second} after CS onset. In the 0~\si{\milli\gram\per\liter} puromycin condition, 19 control fish and 27 delay fish were analyzed; in the \SI{5}{\milli\gram\per\liter} condition, 12 control fish and 9 delay fish were analyzed. Based on the predefined inclusion criteria, 2 control and 6 delay fish were excluded from the 0~\si{\milli\gram\per\liter} groups, and 1 control and 4 delay fish were excluded from the \SI{5}{\milli\gram\per\liter} groups.
+
+\subsection{Validation of priming/habituation phase}
+
+To validate the effectiveness of the priming/habituation phase in establishing a high and stable baseline level of locomotor activity, we quantified baseline tail movements in larvae exposed to the delay protocol under four stimulus conditions that differed in the presence or absence of optovin (opt.) and violet light (VL). Larvae (\SIrange{6}{8}{\dpf}) were head restrained and subjected to priming/habituation and pre-training phases identical in structure to those used in the delay conditioning paradigm (14 CSs and 18 USs of \SI{50}{\milli\second} each, with stimuli delivered at \textasciitilde\SI{1}{\minute} intervals and consecutive USs spaced \textasciitilde\SI{2}{\minute} apart). The four groups were: (i) no VL, no optovin; (ii) VL only, no optovin; (iii) optovin only, no VL; and (iv) both VL and optovin.
+
+\subsection{Chemogenetic ablation of Purkinje cells}
+
+To assess the contribution of Purkinje cells (PCs) to associative learning, we performed targeted ablation of cerebellar PCs using the nitroreductase (Ntr)--Nifurpirinol (NfP) chemogenetic approach. Ntr catalyzes the reduction of the prodrug NfP into a cytotoxic compound, resulting in selective cell death in Ntr-expressing populations. We used the Tg(ca8:epNtr-tagRFP) line, in which enhanced Ntr (epNtr) fused to tagRFP is expressed under the PC-specific ca8 enhancer, enabling selective ablation of PCs following NfP treatment. The transgenic construct was generated by injecting the ca8:epNtr-tagRFP plasmid together with tol2 mRNA into one-cell-stage TL embryos. Founders showing RFP expression restricted to the cerebellar Purkinje cell layer were outcrossed to TL fish to establish a stable line.
+
+For ablation experiments, progeny from Tg(ca8:epNtr-tagRFP)\textsuperscript{+/-} outcrosses were screened for RFP expression in the cerebellum at \SI{5}{\dpf}. Ten RFP-positive (Ntr\textsuperscript{+}) and ten RFP-negative (Ntr\textsuperscript{-}) larvae were kept together in the same Petri dish to ensure identical handling. At \SI{6}{\dpf}, most of the water was replaced with \SI{30}{\milli\liter} of \SI{5}{\micro\Molar} NfP solution in fish water containing \SI{0.2}{\percent} DMSO (diluted 1:500 from a \SI{2.5}{\milli\Molar} stock solution). Petri dishes were incubated overnight (\SI{16}{\hour}) at \SI{28}{\degreeCelsius} in complete darkness to prevent NfP photodegradation. All handling steps, including NfP preparation and fish transfer, were performed under low-light conditions. After incubation, larvae were rinsed thoroughly three times in fresh fish water to remove residual NfP and DMSO, then allowed to recover for \SI{24}{\hour} before behavioral testing at \SI{7}{\dpf}. After the experiments, larvae were re-screened for RFP to confirm group identity. RFP-negative siblings served as treatment controls. These experiments complement previous work implicating cerebellar Purkinje cells and cerebellar output neurons in larval zebrafish motor learning \citep{harmonDistinctResponsesPurkinje2017,najacSynapticVarianceAction2023}.
+
+\subsection{Data acquisition and online tracking}
+
+Behavioral data acquisition, stimulus presentation, and online tail tracking were controlled by custom-written software in C\# (Microsoft) built on the Sardine experimental framework (Orger lab; A. Laborde and A.\,L. Martins, manuscript in preparation) and using the OpenCV image-processing library. The software communicated with the Arduino microcontroller boards that controlled the CS and US LEDs, acquired image frames from the high-speed camera in each setup, and logged all stimulus and behavioral data streams to disk in real time.
+
+Tail kinematics were tracked online during video acquisition at \SI{700}{\fps}. For each frame, the software identified the coordinates of 15 equidistant points along the tail, from the midpoint of the swim bladder to the tail tip, using a modified version of a previously described tracking algorithm \citep{Marques2018}. The angles between consecutive tail segments defined by these points were computed in real time and stored together with the raw tracking coordinates. This provided a continuous, multi-segment description of tail posture suitable for subsequent computation of tail-movement vigor.
+
+Communication with the Arduino Uno R3 microcontroller boards was handled by a dedicated Sardine module. The start and end of each stimulus (CS and US) were triggered by the microcontrollers and reported back to the host computer over a serial connection. Upon reception of these messages, the C\# software recorded the event identity and a millisecond-resolution system timestamp, enabling subsequent alignment of stimulus events with the camera and tail-tracking data streams.
+
+\subsection{Behavioral data preprocessing and synchronization}
+
+Behavioral data were preprocessed offline using custom Python (version~3.13) scripts based on standard scientific libraries. The primary goal of this pipeline was to temporally synchronize three data streams---camera acquisition logs, tail-tracking data, and stimulus event logs---and to provide a clean, annotated dataset for subsequent analysis.
+
+\paragraph{Camera data integration and synchronization}
+
+The camera log file, which contained the system timestamp corresponding to the arrival of each image frame at the host computer, was used to reconstruct precise frame-acquisition timings and to identify any dropped frames. The inter-frame interval (IFI) was initially estimated as the median time difference between consecutive frame log entries. Periods of stable recording were then identified at the beginning and end of each experiment as contiguous sequences of IFIs matching the estimated framerate within a tolerance of $\pm 0.005$~ms. The first frame in the initial stable region was designated as the temporal reference frame. The mean IFI computed between the first and last stable regions was taken as the operational framerate of the camera (expected to be \textasciitilde\SI{700}{\fps}). Frame reception latencies were analyzed to detect any dropped frames; experiments in which at least one frame was missing were excluded from further analysis.
+
+\paragraph{Tail-tracking data integration and temporal refinement}
+
+Raw tail-tracking data, consisting of the time series of 15 tail-segment angles, were synchronized with the camera frames using shared frame IDs present in both the image acquisition and tracking logs. To ensure temporal consistency across experiments, the tail-angle data were interpolated to a standardized sampling rate of \SI{700}{\fps} using linear interpolation and the operational framerate estimated from the camera log. All data recorded prior to the designated reference frame (corresponding to the initial seconds of the experiment) were discarded. Frame acquisition timestamps were then recalculated relative to the reference frame and the operational framerate, yielding an estimate of the actual camera acquisition time for each behavioral data point. The fixed but unknown delay between image capture at the camera sensor and frame reception by the host computer was not explicitly corrected.
+
+\paragraph{Stimulus protocol integration}
+
+Precise timing information for all CS and US presentations was extracted from the stimulus log file, in which millisecond-resolution timestamps were recorded by the host computer upon receiving trigger messages from the Arduino microcontrollers. These stimulus-event timestamps were aligned with the synchronized behavioral data streams using the common system time base, allowing each CS and US to be mapped onto the corresponding points in the tail-angle and camera time series. As with the camera data, the inherent communication delay between stimulus onset at the hardware level and logging by the host computer was an unknown constant and was therefore not corrected explicitly.
+
+\subsection{Tail movement detection and vigor}
+
+Following synchronization of the behavioral and stimulus data streams, tail kinematics were further processed to detect discrete tail movements and to quantify their vigor.
+
+For each frame, the cumulative sum of the 15 tail-segment angles was computed, providing a scalar measure of overall tail curvature. To reduce high-frequency noise, the cumulative angle signal was first smoothed spatially using a rolling average across tail segments with a 3-segment window. Temporal smoothing was then applied using a rolling average with a \SI{10}{\milli\second} window across time (equivalent to 7 frames at \SI{700}{\fps}). This combination of spatial and temporal filtering produced a cleaner curvature trace suitable for subsequent vigor and bout detection.
+
+Tail-movement vigor was defined as the sum of angular speeds across all 15 tail segments. Angular speed for each segment was computed as the first temporal derivative of its cumulative angle time series. The absolute angular speeds of the 15 segments were then summed for each frame, yielding a single scalar ``tail-movement vigor'' value that captured the intensity of movement in any part of the tail.
+
+Discrete tail movements (bouts) were segmented from the continuous vigor time series using a modified version of a previously established algorithm \citep{Marques2018}. A baseline-corrected activity measure was first computed by subtracting, at each frame, a rolling minimum (20-frame centered window) from a rolling maximum (400-frame centered window) of the vigor signal. This operation enhanced transient peaks relative to slower baseline fluctuations. Frames in which this baseline-corrected vigor exceeded a primary threshold of \SI{4}{\degree\per\milli\second} were initially flagged as candidate movement frames. Candidate segments separated by gaps of fewer than 10 frames were merged into single bouts. Any resulting bout with a total duration shorter than 40 frames was discarded as too brief to constitute a tail movement. For each remaining candidate bout, the peak angular speed was computed; bouts whose peak vigor did not reach a secondary threshold of \SI{1}{\degree\per\milli\second} were excluded, ensuring that only sufficiently strong and sustained events were classified as tail movements.
+
+Vigor values for all time points falling outside the detected bouts were set to NaN, reflecting the fact that vigor was defined only during periods of active movement. For all experiments except the initial US-response characterization, the vigor time series was further smoothed using a non-centered 10-frame rolling average (with \texttt{min\_periods=1} to retain early-bout samples) and then downsampled by retaining every 10th frame, reducing the effective sampling rate to \SI{70}{\hertz}.
+
+For subsequent analysis, each experimental trial was defined as the \SI{90}{\second} window centered on CS onset (from \SI{-45}{\second} to \SI{+45}{\second} relative to CS onset). The vigor data were segmented into these trials and grouped according to experimental phase (pre-training, training, testing) and conditioning protocol (delay, trace variants, unpaired control).
+
+\subsection{Derived behavioral measures}
+
+A series of derived measures was computed from the segmented vigor traces to quantify conditioned changes in tail movement.
+
+\paragraph{Scaled vigor (CS- and US-aligned)}
+
+To compare movement intensity across animals, tail-movement vigor was scaled on a per-trial basis relative to a 15-s baseline. For CS-aligned analyses, the baseline was defined as the \SI{15}{\second} period preceding CS onset; for US-aligned analyses, it was the \SI{15}{\second} period preceding US onset. For each trial, the median vigor in the baseline window was subtracted from the vigor at each time point, and the resulting difference was divided by the same baseline median. This produced a dimensionless ``scaled vigor'' trace that reflected proportional changes in movement intensity relative to baseline. Trials in which no tail movement occurred during the entire baseline window had undefined (NaN) baseline medians and were excluded from analyses involving scaled vigor. For each experimental condition, scaled-vigor traces from individual fish were aggregated by computing the median across fish at each time point.
+
+
+
+\paragraph{Baseline measure..and responses to UV..}
+
+Baseline motor activity was quantified during the 15-s pre-CS period of each trial. For each larva and trial, we measured (i) whether at least one tail movement occurred (fraction of larvae with any pre-CS movement), (ii) the number of tail movements, (iii) the fraction of time spent moving, and (iv) the vigor of tail movements, defined as the mean tail-movement vigor across all detected bouts within the pre-CS window. Vigor was only defined during periods of active movement; consequently, variability in vigor estimates reflects how many bouts contributed to the mean in each condition and trial.
+
+
+\paragraph{Heatmaps and visualization}
+
+For visualization of pooled behavior, aggregated scaled-vigor traces were often binned in either \SI{0.5}{\second} or \SI{1}{\second} intervals by averaging all samples within each bin. For CS-aligned heatmaps of pooled data, the binned scaled vigor was min--max normalized within the pre-CS baseline window using the 10th and 90th percentiles of baseline values as the minimum and maximum, respectively, and then clipped to the [0, 1] interval. For individual-fish heatmaps, tail-movement vigor within each bout was represented as a step function with constant value equal to the bout-averaged vigor. These time series were min--max scaled using the 20th and 80th percentiles of the \SI{40}{\second} pre-CS baseline as minimum and maximum and clipped to [0, 1].
+
+To visualize changes in scaled vigor over time across blocks of trials, binned scaled-vigor traces were baseline-corrected by subtracting the median scaled vigor in the 15-s pre-CS window for each block or catch trial. For experimental blocks, the resulting traces were clipped to ranges such as [$-2$, 2]; for pooled catch-trial data, narrower ranges such as [$-1.5$, 1.5] were used. For plotting scaled vigor per individual catch trial, per-fish binned traces were again min--max normalized within the 15-s pre-CS window (10th/90th percentiles as min/max), median-centered, and clipped to [$-1.5$, 1.5]. Scaled vigor was undefined in trials with only one or no baseline movements.
+
+\paragraph{Normalized vigor and CR (CR) intervals}
+
+To summarize responses per trial, a ``normalized vigor'' metric was computed as the ratio of mean raw vigor in a paradigm-specific CR interval to the mean raw vigor in the 15-s pre-CS baseline. Because vigor was defined only during active movement, all NaN samples (immobility) were excluded from these means, so normalized vigor captured changes in movement intensity conditional on movement occurring.
+
+CR intervals were defined a priori based on scaled-vigor time courses and qualitative heatmaps, with the goal of capturing anticipatory suppression while avoiding contamination by the US-evoked response. For CS-aligned analyses, CR intervals were defined as follows: for Delay, \SIrange{0}{9}{\second} after CS onset (covering the CS while excluding the UR); for incTrace, \SIrange{0}{10.5}{\second} after CS onset (covering the entire CS and the initial \SI{0.5}{\second} trace interval, matching the early training trials); for 3sTrace, \SIrange{0}{13}{\second} after CS onset (covering the CS and the \SI{3}{\second} trace interval); and for 10sTrace, the \SI{10}{\second} trace interval between CS offset and expected US onset. For US-aligned analyses, normalized vigor was computed using the same procedure but aligning trials to US onset and defining CR intervals as negative time windows preceding the US (e.g. \SIrange{-9}{0}{\second} for Delay and \SIrange{-13}{0}{\second} for 3sTrace).
+
+\paragraph{Pooled vigor}
+
+For some analyses, pooled vigor traces were used instead of per-trial normalized values. In these cases, for each trial and for each block of interest (e.g.\ late pre-training, early test, late test), vigor traces were scaled to their own pre-CS baseline (typically by subtracting and/or dividing by the baseline median), and then averaged or median-combined across trials and fish within the same condition. This approach provided smooth time-resolved estimates of how tail-movement intensity evolved relative to baseline under different conditioning protocols.
+
+\subsection{Inclusion criteria}
+
+Because tail-movement vigor was defined only during periods of active movement (with vigor set to NaN during immobility), normalized and scaled-vigor measures could only be computed for trials in which larvae moved in both the baseline and CR (CR) intervals. To ensure that group-level analyses reflected reliably engaged animals rather than sporadically active individuals, we applied predefined behavioral inclusion criteria before pooling data across fish. Only larvae that consistently responded to the US and generated sufficient tail movements across key trial blocks were retained.
+
+Unless otherwise indicated (e.g.\ in the priming/habituation validation experiment), a fish was included in the main conditioning analyses only if all of the following criteria were met:
+\begin{itemize}
+	\item It exhibited at least one tail movement within \SI{5}{\second} following every US in the training phase.
+	\item It exhibited at least one tail movement within \SI{5}{\second} following the final \SI{500}{\milli\second} US delivered at the end of the testing phase (health/viability check).
+	\item It displayed tail movements in both the 15-s pre-CS baseline and the corresponding CR interval in at least 3 trials in each of the following trial blocks: the last 5 trials of pre-training (``late pre-train''), the first 5 trials of testing (``early test''), and the last 5 trials of testing (``late test'').
+\end{itemize}
+
+\paragraph{Number of animals included in the analysis}
+
+A total of 87 larval zebrafish were excluded from the refined-conditioning behavioral analyses based on the predefined criteria described above. The final numbers of animals included were as follows. For the test groups: 36 fish in Delay, 34 in incTrace, 79 in 3sTrace, and 11 in 10sTrace. For the control groups: 31 fish in Delay, 36 in incTrace, 83 in 3sTrace, and 15 in 10sTrace. The corresponding numbers of excluded animals were: 12 in Delay test, 14 in incTrace test, 10 in 3sTrace test, and 6 in 10sTrace test; and 15 in Delay control, 12 in incTrace control, 8 in 3sTrace control, and 4 in 10sTrace control.
+
+In the pharmacological experiments with the NMDA receptor antagonist MK-801, larvae were analyzed under three concentrations (0, 10, and \SI{100}{\micro\Molar}) in Delay conditioning and under two concentrations (0 and \SI{100}{\micro\Molar}) in Trace conditioning. In the Delay experiment, 14 control and 16 Delay fish were analyzed in the 0~\si{\micro\Molar} MK-801 condition, 15 control and 15 Delay fish in the 10~\si{\micro\Molar} condition, and 13 control and 13 Delay fish in the 100~\si{\micro\Molar} condition. In the Trace experiment, 13 control and 17 Trace fish were analyzed in the 0~\si{\micro\Molar} MK-801 condition and 16 control and 17 Trace fish in the 100~\si{\micro\Molar} condition. Based on the same predefined behavioral inclusion criteria, 3 control and 1 Delay fish were excluded from the 0~\si{\micro\Molar} Delay groups, 1 control and 1 Delay fish from the 10~\si{\micro\Molar} Delay groups, and 2 control and 2 Delay fish from the 100~\si{\micro\Molar} Delay groups; in the Trace experiment, 5 control and 1 Trace fish were excluded from the 0~\si{\micro\Molar} groups and 2 control and 1 Trace fish from the 100~\si{\micro\Molar} groups.
+
+In the long-term memory experiment with the protein synthesis inhibitor puromycin, \SIrange{5}{7}{\dpf} larvae were tested either in control conditions (0~\si{\milli\gram\per\liter} puromycin) or in the presence of \SI{5}{\milli\gram\per\liter} puromycin, as in previous studies of associative LTM in larval zebrafish \citep{hinzProteinSynthesisDependentAssociative2013,dempseyRegionalSynapseGain2022}.
+% TODO Add this information for the ca8 ablation experiment and adapt the following paragraph accordingly.
+
+% TODO Add this information for the imaging experiments.
+
+\subsection{Statistical analysis}
+
+Statistical analyses were performed using non-parametric tests. For between-group comparisons (e.g. conditioned vs.\ control or Ntr\textsuperscript{+} vs.\ Ntr\textsuperscript{-}), we used two-sided Mann--Whitney U tests. For within-group comparisons across conditions or phases (e.g. late pre-train vs.\ early test vs.\ late test within the same group), we used Wilcoxon signed-rank tests. When multiple comparisons were performed within a family of related tests, $p$-values were adjusted using the Holm--Bonferroni correction, unless stated otherwise.
+
+Significance annotations in figures follow the convention: ns, $p > 0.05$; *, $p \leq 0.05$; **, $p \leq 0.01$; ***, $p \leq 0.001$; ****, $p \leq 0.0001$. Where indicated, 95\% confidence intervals (CIs) for median traces or summary statistics were estimated by bootstrap resampling with 1{,}000 iterations using a fixed random seed (seed = 10) to ensure reproducibility.
+
+
+
+
+
+
+
+
+
+
+% !!!! CHECK NOTES:
+ONENOTE
+RANDOM WORD DOCUMENTS
+

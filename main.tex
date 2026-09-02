@@ -1,0 +1,287 @@
+% !TeX program = pdflatex
+\documentclass[9pt,lineno]{elife}
+% Use the onehalfspacing option for 1.5 line spacing
+% Use the doublespacing option for 2.0 line spacing
+
+% Core math and fonts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% \usepackage{lmodern} % avoid resetting the default family when using pdfLaTeX
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Units and chemistry
+\usepackage[version=4]{mhchem} % currently unused (\ce{} not in text; comment out if not needed)
+\usepackage{siunitx}           % used extensively: \SI, \SIrange, \si
+
+% Layout and typography
+\usepackage{textcomp}  % probably optional; no explicit textcomp symbols seen
+\usepackage{microtype}
+\setlength{\emergencystretch}{2em}
+\hbadness=1500
+\vfuzz=1pt
+\raggedbottom
+\usepackage{geometry}  % likely configured by elife; no explicit geometry commands used
+% \usepackage{booktabs}  % keep if you have tables elsewhere
+
+% Figures and color
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption} % not yet used in the snippets; keep if you plan sub-Figures
+
+% Hyperlinks and quotes
+\usepackage{hyperref}
+\usepackage{csquotes}   % \enquote{} etc. not used yet; optional
+
+
+\usepackage{todonotes}
+
+
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\sisetup{detect-all}
+\DeclareSIUnit\Molar{M}
+\DeclareSIUnit\dpf{dpf}
+\DeclareSIUnit\fps{fps}
+
+% \usepackage{todonotes}
+
+%* Article setup
+% region Article setup
+\title{Establishing Trace Conditioning in Head-Fixed Larval Zebrafish Reveals Predictive Motor Suppression}
+
+\author[1*]{Joaquim A.S.M. Contradanças}
+\author[1]{Michael B. Orger}
+\affil[1]{Champalimaud Research, Champalimaud Foundation, Lisbon, Portugal.}
+
+\corr{joaquim.contradancas@research.fchampalimaud.org}{JASMC}
+% endregion
+
+\begin{document}
+
+% region Abstract
+%* Abstract
+\input{Sections/1_Abstract.tex}
+% endregion
+
+% region Introduction
+%* Introduction
+\input{Sections/2_Introduction.tex}
+% endregion Introduction
+
+% * Results
+% region Results
+
+\section{Results}
+
+\input{Sections/3_Results_1.tex}
+
+\input{Sections/4_Results_2.tex}
+
+\input{Sections/5_Results_3.tex}
+
+
+
+% region Figures
+
+% region Figure 1
+\begin{figure}
+  \begin{fullwidth}
+
+    \includegraphics[width=0.95\linewidth]{Sections/Figures/Fig1/Fig1_test1.png}
+
+    \caption{A refined classical conditioning paradigm reveals robust associative learning in larval zebrafish. Number of fish tested: Delay group, n=36; Control group, n=31.
+      % In the heatmaps, colors represent the average/median scaled vigor in each tail movement.
+      % (A) Experimental setup. Top-view schematic of the setup during CS presentation. A larva is head-fixed in agarose with eyes and tail free. Three LED pairs illuminate the arena: the right pair delivers the CS; the front pair provides basal illumination when no CS is present. The larva faces away from a larger LED that delivers the US. Diagram is not to scale except for the LEDs around the head, which are shown in their true relative positions. (B) Conditioning protocol. Experimental groups differ only in CS--US temporal contingency during training. In controls, CS presentations occur at random times relative to the US. (C) Example tail angle traces from two training trials (Early and Late) of a representative delay fish. CS onset and offset are marked by green vertical lines; US onset is marked by the purple vertical line. Grey rectangles indicate automatically detected tail movements. (D) Stimulus delivery protocols. Representative stimulus sequences for all experimental conditions. At this resolution, delay and trace protocols appear similar. In the priming/habituation phase, the second and fourth CSs were presented on the larva's left side. Green lines mark CS onset; purple arrows mark US delivery (\SI{50}{\milli\second} for priming/habituation, pre-training, and test; \SI{100}{\milli\second} for training). (E) Example single-fish vigor. Tail movement vigor from an individual undergoing delay conditioning, showing emergence of a conditioned response (CR). (F) Population-level learning. Heatmap of scaled vigor per trial in delay and control groups. Data were binned in \SI{0.5}{\second} intervals. (G) Quantification of learning. Normalised vigor compared across Pre-Train (PT), Early Test (ET), and Late Test (LT) phases, showing retention and extinction. Each dot represents the median vigor across 5 trials. Asterisks indicate significance (Mann-Whitney U and Wilcoxon signed-rank, Holm-BonferronWe corrected). (H) Acquisition curve. Trial-by-trial evolution of normalised vigor. Shaded areas represent \SI{95}{\percent} confidence intervals. (I) Temporal dynamics. Median $\pm$ confidence interval of scaled vigor (\SI{1}{\second} bins), illustrating CR timing and extinction. Green bars mark CS onset and offset. Figure 1. A refined classical conditioning paradigm reveals robust associative learning in larval zebrafish.
+      % (A) Experimental setup. Top-view schematic of the setup during CS presentation. A larva is head-fixed in agarose with eyes and tail free. Three LED pairs illuminate the arena: the right pair delivers the CS; the front pair provides basal illumination when no CS is present. The larva faces away from a larger LED that delivers the US. Diagram is not to scale except for the LEDs around the head, which are shown in their true relative positions.
+      % (B) Conditioning protocol. Experimental groups differ only in CS--US temporal contingency during training. In controls, CS presentations occur at random times relative to the US.
+      % (C) Example tail angle traces from two training trials (Early and Late) of a representative delay fish. CS onset and offset are marked by green vertical lines; US onset is marked by the purple vertical line. Grey rectangles indicate automatically detected tail movements.
+      % (D) Stimulus delivery protocols. Representative stimulus sequences for all experimental conditions. At this resolution, delay and trace protocols appear similar. In the priming/habituation phase, the second and fourth CSs were presented on the larva's left side. Green lines mark CS onset; purple arrows mark US delivery (\SI{50}{\milli\second} for priming/habituation, pre-training, and test; \SI{100}{\milli\second} for training).
+      % (E) Example single-fish vigor. Tail movement vigor from an individual undergoing delay conditioning, showing emergence of a conditioned response (CR).
+      % (F) Population-level learning. Heatmap of scaled vigor per trial in delay and control groups. Data were binned in \SI{0.5}{\second} intervals.
+      % (G) Quantification of learning. Normalised vigor compared across Pre-Train (PT), Early Test (ET), and Late Test (LT) phases, showing retention and extinction. Each dot represents the median vigor across 5 trials. Asterisks indicate significance (Mann-Whitney U and Wilcoxon signed-rank, Holm-BonferronWe corrected).
+      % (H) Acquisition curve. Trial-by-trial evolution of normalised vigor. Shaded areas represent \SI{95}{\percent} confidence intervals.
+      % (I) Temporal dynamics. Median $\pm$ confidence interval of scaled vigor (\SI{1}{\second} bins), illustrating CR timing and extinction. Green bars mark CS onset and offset.
+      % Number of fish tested: Delay group, n=36; Control group, n=31.
+    }
+    \label{fig:fig1}
+  \end{fullwidth}
+\end{figure}
+% endregion Figure 1
+
+% region Figure 2
+\begin{figure}
+  \begin{fullwidth}
+    \includegraphics[width=0.85\linewidth]{Sections/Figures/Fig2/Fig2_test1.png}
+    \caption{
+      Figure 2. A refined classical conditioning paradigm reveals robust associative learning in larval zebrafish.
+      % (A) Experimental setup. Top-view schematic of the setup during CS presentation. A larva is head-fixed in agarose with eyes and tail free. Three LED pairs illuminate the arena: the right pair delivers the CS; the front pair provides basal illumination when no CS is present. The larva faces away from a larger LED that delivers the US. Diagram is not to scale except for the LEDs around the head, which are shown in their true relative positions.
+      % (B) Conditioning protocol. Experimental groups differ only in CS--US temporal contingency during training. In controls, CS presentations occur at random times relative to the US.
+      % (C) Example tail angle traces from two training trials (Early and Late) of a representative delay fish. CS onset and offset are marked by green vertical lines; US onset is marked by the purple vertical line. Grey rectangles indicate automatically detected tail movements.
+      % (D) Stimulus delivery protocols. Representative stimulus sequences for all experimental conditions. At this resolution, delay and trace protocols appear similar. In the priming/habituation phase, the second and fourth CSs were presented on the larva's left side. Green lines mark CS onset; purple arrows mark US delivery (\SI{50}{\milli\second} for priming/habituation, pre-training, and test; \SI{100}{\milli\second} for training).
+      % (E) Example single-fish vigour. Tail movement vigour from an individual undergoing delay conditioning, showing emergence of a conditioned response (CR).
+      % (F) Population-level learning. Heatmap of scaled vigour per trial in delay and control groups. Data were binned in \SI{0.5}{\second} intervals.
+      % (G) Quantification of learning. Normalised vigour compared across Pre-Train (PT), Early Test (ET), and Late Test (LT) phases, showing retention and extinction. Each dot represents an individual fish. Asterisks indicate significance (Mann-Whitney U with Holm-BonferronWe correction).
+      % (H) Acquisition curves. Trial-by-trial evolution of normalised vigour. Shaded areas represent \SI{95}{\percent} confidence intervals.
+      % (D) Temporal dynamics. Median $\pm$ confidence interval of scaled vigour (\SI{1}{\second} bins), illustrating CR timing and extinction. Green bars mark CS onset and offset.
+      % Number of fish tested: Delay group, n=36; Control group, n=31.
+      % Figure 2. Associative learning in trace conditioning depends on trace interval duration.
+      % (A) Population-level learning. Heatmaps of scaled vigour across trials for incTrace (left), 3sTrace (middle), and 10sTrace (right) groups. Data are binned in \SI{0.5}{\second} intervals. Rows represent individual trials (pre-training at top, test at bottom).
+      % (B) Quantification of learning. Normalised vigour compared across Pre-Train (PT), Early Test (ET), and Late Test (LT) phases for each trace paradigm. Each dot represents an individual fish. Asterisks indicate significance (Mann-Whitney U with Holm-BonferronWe correction).
+      % (C) Acquisition curves. Trial-by-trial evolution of normalised vigour. Shaded areas represent \SI{95}{\percent} confidence intervals.
+      % (D) Temporal dynamics. Median $\pm$ confidence interval of scaled vigour (\SI{1}{\second} bins), illustrating CR timing and extinction. Green bars mark CS onset and offset.
+      % Number of fish tested: incTrace, n=34 (test), n=36 (control); 3sTrace, n=79 (test), n=83 (control); 10sTrace, n=22 (test), n=18 (control).
+    }
+    \label{fig:fig2}
+  \end{fullwidth}
+\end{figure}
+% endregion Figure 2
+
+% region Figure 3
+\begin{figure}
+  \begin{fullwidth}
+    \includegraphics[width=0.75\linewidth]{Sections/Figures/Fig3/Fig3_test1.png}
+    \caption{
+      Timing thing.
+    }
+    \label{fig:fig3}
+  \end{fullwidth}
+\end{figure}
+% endregion Figure 3
+
+
+% region Figure 4
+\begin{figure}
+  \begin{fullwidth}
+    \includegraphics[width=0.65\linewidth]{Sections/Figures/Fig4/Fig4_test1.png}
+    \caption{
+      Molecular mechanisms of associative learning.
+      % (A) NMDA receptor dependence. Effect of MK-801 on delay (top) and trace (bottom) conditioning. Boxplots show the distribution of normalised vigour during Pre-Train, Early Test, and Late Test phases. Each dot represents the median vigour from 5 trials per fish. Boxes span the interquartile range (Q1--Q3), with a dashed line marking the median. Whiskers extend to 1.5 $\times$ IQR beyond Q1 and Q3; outliers beyond this range are plotted individually. Asterisks indicate significance (Mann-Whitney U and Wilcoxon signed-rank, Holm-Bonferroni corrected).
+      % Number of fish tested: (A) Delay (top), n(test 0~\si{\micro\Molar})=16, n(ctrl 0~\si{\micro\Molar})=14, n(test 10~\si{\micro\Molar})=15, n(ctrl 10~\si{\micro\Molar})=15, n(test 100~\si{\micro\Molar})=13, n(ctrl 100~\si{\micro\Molar})=13; Trace (bottom), n(test 0~\si{\micro\Molar})=17, n(ctrl 0~\si{\micro\Molar})=13, n(test 100~\si{\micro\Molar})=17, n(ctrl 100~\si{\micro\Molar})=16.
+      % (B) Protein synthesis and long-term memory. Delay conditioning in the absence (left) and presence (right) of the protein synthesis inhibitor puromycin (5 mg/L). Vigour suppression during Early Test persists under puromycin, indicating protein-synthesis-independent memory formation. Each dot represents an individual fish. Asterisks indicate significance (Mann-Whitney U and Wilcoxon signed-rank, Holm-Bonferroni corrected).
+      % Number of fish tested: (B) left, n(test 0 mg/L)=27, n(ctrl 0 mg/L)=19; (B) right, n(test 5 mg/L)=9, n(ctrl 5 mg/L)=12.
+      % (C) Memory savings. Normalized vigour across trials during initial training and retraining after extinction. Shaded areas indicate 95\% confidence intervals, and vertical grey bars mark transitions between pre-training, training, testing, and retraining phases. Left: Delay-trained fish ('Delay Train') compared with control fish undergoing their first CS--US paired training trials after testing ('Control Train'). Right: Delay-trained fish during initial training ('Delay Train') compared with the same fish during retraining after extinction ('Delay Re-Train').
+      % Number of fish tested: same as in (B) left.
+    }
+    \label{fig:fig4}
+  \end{fullwidth}
+\end{figure}
+% endregion Figure 4
+
+
+% % region Figure 5
+% \begin{figure}
+% \begin{figure}
+% \begin{fullwidth}
+% \includegraphics[width=0.65\linewidth]{Sections/Figures/Fig5.png}
+% \caption{
+% unpaired control ca8% \$\textasciicircum +\$ (N = 6) and ca8\$\textasciicircum-\$ (N = 10); delay ca8\$\textasciicircum +\$ (N = 12) and ca8\$\textasciicircum-\$ (N = 10); trace ca8\$\textasciicircum +\$ (N = 13) and ca8\$\textasciicircum-\$ (N = 9). Exclusion criteria were applied prior to analysis.
+% }
+% \label{fig:fig5}
+% \end{fullwidth}
+% \end{figure}
+% % endregion Figure 5
+
+
+
+% endregion Figures
+
+
+% region Sup. Figures
+
+% todo Also show heatmap of US aligned data for all (weak and strong) US. And raw vigor
+
+%! todo calculate overall informativeness after Training
+
+
+% * Sup. Fig. 1
+
+% Optovin reliably elicits rapid, vigorous tail bends upon violet-light stimulation, and these responses are tightly time-locked to the stimulus, resembling escape behaviors triggered by noxious cues such as mustard oil or heat \citep{Kokel2013,Wee2019,weeSocialIsolationModulates2022}. Optovin acts via activation of the TRPA1b channel in zebrafish somatosensory neurons \citep{Kokel2013}, providing a robust and well-defined aversive signal that can be precisely timed and standardized across trials. Based on a combination of literature reports and our own optimization experiments (see below), we selected \SI{10}{\micro\Molar} optovin in \SI{10}{\milli\Molar} Tris-HCl-buffered E3 and \SI{100}{\milli\second} violet-light pulses as the US parameters for the classical conditioning protocols.
+
+
+% To determine the optimal parameters for using optovin as the US in conditioning experiments, we systematically characterized larval responses to combinations of violet-light pulse durations and optovin concentrations. Each condition was tested in separate groups of \SIrange{8}{9}{\dpf} larvae from different clutches. Protocols consisted of 50 violet-light pulses delivered at \SIrange{1.5}{2.5}{\minute} intervals, matching the planned number and spacing of US presentations during conditioning.
+
+% We first screened conditions motivated by previous studies \citep{Lam2017,Wee2019}, ranging from \SI{10}{\milli\second} pulses without optovin (control) to \SI{50}{} and \SI{100}{\milli\second} pulses in the presence of \SI{10}{\micro\Molar} optovin. For each pulse, tail behavior was quantified in the \SI{5}{\second} interval following pulse onset, using (i) the fraction of fish exhibiting at least one tail movement and (ii) the vigor of those movements as readouts of stimulus aversiveness.
+
+% Only conditions with \SI{10}{\micro\Molar} optovin and pulse durations of \SI{50}{} or \SI{100}{\milli\second} elicited tail movements in \textasciitilde\SI{97}{\percent} of fish across all 50 stimuli. By contrast, \SI{10}{\milli\second} pulses, with or without optovin or with \SI{5}{\micro\Molar} optovin, produced responses in fewer than \SI{75}{\percent} of fish on average and yielded vigor values comparable to those observed in the absence of optovin. These conditions were therefore deemed insufficiently robust for use as a US.
+
+% Between the two effective conditions at \SI{10}{\micro\Molar} optovin, \SI{50}{\milli\second} pulses evoked an average tail-movement vigor of \textasciitilde\SI{21}{\degree\per\milli\second}, whereas \SI{100}{\milli\second} pulses evoked \textasciitilde\SI{25}{\degree\per\milli\second}. In both cases, vigor decreased over the first \textasciitilde25 stimuli and then reached a plateau. We selected \SI{100}{\milli\second} pulses at \SI{10}{\micro\Molar} optovin for conditioning experiments because they produced stronger movements and thus a more salient US.
+
+% We also examined how repeated optovin stimulation affected spontaneous activity. In the 15-s baseline window preceding each pulse, more than \SI{80}{\percent} of larvae exposed to \SI{50}{} or \SI{100}{\milli\second} pulses at \SI{10}{\micro\Molar} optovin displayed at least one tail movement in almost every trial, whereas baseline movement was markedly lower under all \SI{10}{\milli\second} conditions. With longer pulses, the number of movements and the time spent moving increased over repeated exposures, while the vigor of individual bouts remained comparable between the \SI{50}{} and \SI{100}{\milli\second} conditions. These observations indicate that optovin plus violet light not only drives strong US-locked responses but also elevates overall locomotor activity across trials.
+
+% Beyond choosing US duration and optovin concentration, buffering the medium proved essential for consistent stimulus delivery. In preliminary experiments conducted in unbuffered E3, the characteristic yellowish color of optovin faded over several hours, the medium pH rose above 8.0 (relative to the typical larval rearing pH of \textasciitilde7.2 \citep{Westerfield2007,Martins2016}), and behavioral responses to the optovin stimulus weakened over time (data not shown). To stabilize both pH and optovin, we added \SI{10}{\milli\Molar} Tris-HCl to the E3 medium. Qualitative observations indicated that this modification permitted experiments lasting more than \SI{5}{\hour}, with larvae appearing healthier and more active, and with optovin-evoked responses remaining stable (data not shown). Consequently, all subsequent conditioning experiments used \SI{10}{\micro\Molar} optovin in E3 buffered with \SI{10}{\milli\Molar} Tris-HCl, with \SI{100}{\milli\second} violet-light pulses as the US.
+
+% * Sup. Fig. 2
+
+% To assess how paradigm refinements affected baseline activity, I analyzed tail movement during the \SI{15}{\second} pre-CS period across all trials for delay and 3sTrace experiments. Both groups exhibited similar behavioral patterns.
+% A high proportion of fish consistently exhibited movement during the pre-CS baseline across all trials (Figures 3.21 A, 3.22 A). On average, over \SI{96}{\percent} of fish in both conditions displayed at least a tail movement during the baseline period. Furthermore, the probability of movement during the pre-CS period remained relatively stable throughout the experiment.
+% The average vigor of pre-CS baseline tail movements also remained remarkably stable throughout the experiment for all conditions examined (Figures 3.21 B, 3.22 B), averaging 14--16 deg/ms over the entire experiment.
+% Importantly, the refined paradigm led to greater consistency in the overall amount of movement. Both the number of tail movements and the proportion of time spent moving during the pre-CS period were notably stable across all trials. On average, fish displayed a minimum of 9.6 tail movements and spent >\SI{25}{\percent} of the time moving during the baseline across all conditions. These parameters demonstrate reduced trial-to-trial fluctuation compared to the original paradigm (Figure 2.8).
+% In conclusion, the refined conditioning paradigm successfully established a consistently high and more stable baseline of tail movement throughout the experiment, underscoring the effectiveness of the priming and habituation phases, along with interspersed US presentations during pre-train and testing phases, in keeping the animals engaged. The enhanced stability, particularly evident in the number of movements and total time spent moving, represents a significant improvement by providing a more reliable behavioral foundation for assessing CRs.
+% The results demonstrate that the refined paradigm successfully established and maintained a stable and active behavioral baseline, which is crucial for reliably detecting learning-induced changes in vigor.
+
+
+% * Sup. Fig. 3
+% In this 'violet light only' control, the heatmap appears overall darker (Figure 2.4 B). Although the number of fish was comparable across conditions (30 without optovin and 34 with optovin in the delay conditions), this indicates substantially fewer tail movements overall, resulting in more time bins with no movement from any fish, shown as dark areas in the heatmap. Similarly to the unpaired control group, the scaled vigor heatmap for 'violet light only' group of fish showed no apparent behavioral differences between the pre-CS period and the CS-US interval.
+
+
+% * Sup. Fig. ???   Validation of priming/habituation phase
+% \subsection{Validation of priming/habituation phase}
+
+% To validate the effectiveness of the priming/habituation phase in establishing a high and stable baseline level of locomotor activity, we quantified baseline tail movements in larvae exposed to the delay protocol under four stimulus conditions that differed in the presence or absence of optovin (opt.) and violet light (VL). Larvae (\SIrange{6}{8}{\dpf}) were head restrained and subjected to priming/habituation and pre-training phases identical in structure to those used in the delay conditioning paradigm (14 CSs and 18 USs of \SI{50}{\milli\second} each, with stimuli delivered at \textasciitilde\SI{1}{\minute} intervals and consecutive USs spaced \textasciitilde\SI{2}{\minute} apart). The four groups were: (i) no VL, no optovin; (ii) VL only, no optovin; (iii) optovin only, no VL; and (iv) both VL and optovin.
+
+% Baseline motor activity was quantified during the 15-s pre-CS period of each trial. For each larva and trial, we measured (i) whether at least one tail movement occurred (fraction of larvae with any pre-CS movement), (ii) the number of tail movements, (iii) the fraction of time spent moving, and (iv) the vigor of tail movements, defined as the mean tail-movement vigor across all detected bouts within the pre-CS window. Vigor was only defined during periods of active movement; consequently, variability in vigor estimates (SEM) reflects how many bouts contributed to the mean in each condition and trial.
+
+% Presentation of VL alone, without optovin, did not alter baseline activity relative to the condition lacking both VL and optovin. Optovin alone induced a modest increase in spontaneous swimming. By contrast, the combined presence of optovin and VL produced a pronounced and sustained elevation in baseline activity: in this group, the fraction of larvae exhibiting any pre-CS movement reached \textasciitilde0.88 (compared to <0.60 in all other conditions), and from trials 4--14 larvae performed on average \textasciitilde8.5 tail movements and spent \textasciitilde\SI{22}{\percent} of the pre-CS period moving. Despite these differences in activity levels, the mean vigor of individual bouts was similar across conditions; larger SEM values in groups with lower activity were attributable to the smaller number of movements contributing to each average.
+
+% These results demonstrate that simultaneous application of optovin and violet light robustly increases both the likelihood and extent of larval movement during the priming/habituation and pre-training phases, thereby establishing the desired high and stable behavioral baseline for subsequent assessment of conditioned reductions in tail vigor.
+
+
+
+% region Validation of Red CS for Neuroimaging Applications
+% ** Validation of Red CS for Neuroimaging Applications
+% \paragraph{Validation of Red CS for Neuroimaging Applications}
+% While previous analyses pooled data from experiments using both white and red CS, dedicated validation of a red CS was essential for its intended application in neuroimaging studies. A crucial step in early paradigm development, before commencing imaging experiments, was to confirm effective learning with a red CS, thereby addressing potential concerns about differential perception by larval zebrafish compared to white light. A red CS is particularly advantageous for GCaMP-based functional imaging because its wavelength can be more effectively filtered from the green GCaMP emission spectrum, which minimizes signal interference and enhances data quality. The 3sTrace group, with its substantially larger sample size, was chosen for this focused validation. Quantitative analysis of the 3sTrace group exposed exclusively to the red CS provided robust evidence of successful associative learning, followed by complete extinction of the learned response. The successful conditioning with the red CS validates its use for subsequent neuroimaging investigations.
+% endregion Validation of Red CS for Neuroimaging Applications
+
+
+
+% endregion Sup. Figures
+
+
+% endregion Results
+
+
+
+
+
+%* Discussion
+% region Discussion
+
+\input{Sections/Discussion.tex}
+
+% endregion
+
+
+% \input{Sections/materialsandmethods.tex}
+
+%* Methods and Materials
+% region Methods and Materials
+
+\input{Sections/Materialsandmethods.tex}
+
+% endregion
+
+% * References
+% region References
+% Ensure bibliography build stability without in-text citations
+\bibliography{main}
+
+% Example citation to ensure at least one \cite command is present
+% Remove or replace with your actual citation as needed
+% \cite{aizenbergCerebellarDependentLearningLarval2011}
+
+% endregion
+
+
+\end{document}

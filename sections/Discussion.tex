@@ -1,0 +1,62 @@
+\section{Discussion}
+
+We established a robust classical conditioning paradigm for head-fixed larval zebrafish that supports both delay and trace learning and reveals predictive suppression of motor activity as a conditioned response (CR). Using optovin-induced activation of TRPA1b channels as an aversive unconditioned stimulus (US), we achieved reliable associative learning measured through reductions in tail-movement vigor during the conditioned stimulus (CS). This work is the first to demonstrate classical conditioning in larvae using optovin as a US, and the first to establish trace conditioning in this model organism. Together with subsequent pharmacological and memory-retention experiments, these results lay the foundation for dissecting the neural mechanisms of associative learning and temporal prediction using whole-brain imaging.
+
+\subsection{A refined paradigm enables consistent associative learning}
+
+Previous conditioning attempts in restrained larvae were hindered by low learning efficiency, inconsistent control protocols, and unstable baseline behavior. The present paradigm overcomes these limitations using several key refinements. A stationary, temporally uniform CS replaced the earlier dynamic visual cue, isolating temporal learning from spatial confounds. Extending CS duration to ten seconds improved the detectability of gradual vigor changes and aligned the assay with the temporal resolution of calcium imaging. Baseline motor priming and intermittent low-intensity US presentations stabilized spontaneous locomotion, which was essential because the CR expresses as a reduction rather than enhancement of movement.
+
+Catch trials interleaved within training sessions enabled measurement of the full CR time course without contamination by the unconditioned response (UR), and the expanded test phase revealed extinction dynamics. These refinements allowed larvae to develop internally timed responses that became increasingly precise as training progressed. The paradigm also revealed that vigorous optovin stimulation elevates baseline locomotion over several minutes, presumably reflecting a sustained arousal state, which both facilitates detection of vigor suppression and may enhance learning itself.
+
+\subsection{Predictive motor suppression as a conditioned response}
+
+In both delay and trace paradigms, the CR manifested as a graded suppression of tail-movement vigor beginning shortly after CS onset and peaking near the expected US. Although the UR consists of vigorous, escape-like movements, the CR reflects suppression. This apparent mismatch is resolved by recognizing that the UR to optovin is biphasic: an initial reflexive locomotor burst followed by a longer-lasting immobility phase. We interpret the CR as anticipatory recruitment of this immobility component, representing a threat-predictive inhibitory response. Similar multi-component URs have been described across zebrafish paradigms, where CR form often mirrors the dominant UR phase expressed under the relevant behavioral constraints. Under head restraint, where escape is impossible, immobility becomes the adaptive defensive mode. Freely swimming larvae may instead acquire a locomotor-facilitation CR, which should be tested in future work.
+
+CR expression exhibited substantial inter-individual variability. Some larvae showed strong vigor suppression; others showed none. This could reflect insufficient baseline movement, alternative CR modalities (e.g., eye or heart-rate changes), or true non-learning. Expanded kinematic and physiological metrics will help reveal hidden forms of learning and reduce apparent non-learner rates.
+
+\subsection{Temporal precision and the limits of trace conditioning}
+
+The progressive shift of vigor suppression toward the expected US demonstrates that larvae acquire both the CS--US contingency and its temporal structure. Delay conditioning produced the strongest and most temporally precise CRs. Trace conditioning with short gaps (3~s) or gradually increasing gaps also supported learning, though with extended suppression into the trace interval. At longer intervals (10~s), responses were weak or non-significant, revealing a boundary on temporal bridging.
+
+Selecting the trace interval required balancing two opposing factors: longer intervals probe the limits of working memory but reduce learning effectiveness, whereas shorter intervals promote robust learning but reveal little about temporal computation. A fixed 6~s trace interval may serve as an optimal compromise for imaging experiments, extending beyond 3~s yet avoiding the failures observed at 10~s, while matching the slower kinetics of GCaMP indicators.
+
+Interval structure also influences informativeness. In the 10~s trace design, the interval between the US and the next CS contracts, reducing predictive value. Future paradigms should equate US--CS intervals across trace lengths to ensure fair comparisons. Training protocols that shape the trace interval across sessions---progressively extending it into the 10~s range---may reveal whether learning can be strengthened by gradually stretching the temporal demand.
+
+\subsection{Comparison with established conditioning models}
+
+This zebrafish paradigm integrates features of eyeblink conditioning (EBC) and lick-suppression conditioning (LSC). Like EBC, the CR is a graded, precisely timed modulation of motor output; like LSC, it appears as suppression relative to an elevated baseline. Maintaining high baseline locomotion was essential, mirroring the requirement for sustained licking to measure suppression in LSC.
+Despite differences in effector systems, the learning trajectories---acquisition, timing refinement, and extinction---suggest that conserved computational principles govern predictive inhibition across vertebrates.
+
+\subsection{NMDAR dependence and pharmacological constraints}
+
+Pharmacological manipulations revealed that conditioning in both paradigms depends on NMDAR signaling. Delay conditioning persisted at 10~\si{\micro\Molar} MK-801 but was disrupted at 100~\si{\micro\Molar}. Trace conditioning failed entirely at 100~\si{\micro\Molar}, indicating greater vulnerability to NMDAR blockade, consistent with mammalian work showing that trace learning requires sustained CS representations mediated by NMDAR-dependent persistent activity.
+
+However, high-dose MK-801 also produced severe motor abnormalities: altered baseline locomotion, disrupted UR structure, and loss of forward swims. These effects complicate interpretation because systemic drug administration collapses cognitive and motor contributions. Nonetheless, the qualitative differences between delay and trace groups at the same dose argue that the impairments are not purely motoric. A rigorous dose--response curve, including trace conditioning at 10~\si{\micro\Molar}, is needed to determine whether the difference is categorical or graded. More precise methods---local drug delivery, inducible genetic knockdown, or targeted optogenetic/chemogenetic perturbations---will be essential for isolating NMDAR-dependent circuit mechanisms.
+
+\subsection{Neural substrates and implications}
+
+The emergence of trace conditioning implies that larvae maintain CS information across a temporal gap, a computation attributed in mammals to hippocampal, prefrontal, and cerebellar loops. In zebrafish, the pallium and cerebellum are strong candidates for analogous roles. Preliminary two-photon imaging indicates that a subset of putatively cerebellar neurons becomes CS-responsive only after learning. Ongoing and planned experiments using nitroreductase-mediated ablation, laser lesions, and temporally precise optogenetics will test the causal contributions of these populations to delay and trace learning. Whole-brain imaging during training will further reveal how predictive associations are represented and transformed across the vertebrate brain.
+
+\subsection{Memory retention, protein synthesis, and the nature of the 3-h memory}
+
+Using the refined delay protocol, CRs remained detectable after a 3-h retention interval. However, this memory was not abolished by 5~mg/L puromycin. Spaced training conferred no advantage over massed training, consistent with a memory dominated by short-term mechanisms rather than protein-synthesis-dependent long-term memory (LTM). Several explanations are possible: the 3-h memory may not require protein synthesis; drug penetration or timing may have been insufficient; or the memory relies on atypical mechanisms.
+
+Preliminary data at 10~mg/L puromycin suggest reduced CR expression at 3~h, but the experiment was underpowered and lacked unpaired controls. A systematic dose--time study with molecular verification of translational blockade will be required for a decisive classification. Extending retention intervals beyond 3~h remains logistically challenging due to stress, fasting, and fatigue during prolonged restraint. A two-day protocol involving overnight release proved unreliable, underscoring the need for new designs that permit feeding and recovery between sessions.
+
+\subsection{Reacquisition and the absence of memory savings}
+
+Reacquisition after extinction did not proceed faster than initial learning, indicating no behavioral evidence of memory savings. This could reflect true absence of savings, profound extinction, insufficient behavioral sensitivity, or an STM-dominated regime at \SI{3}{\hour}. Interestingly, na\"ive controls exposed only to paired training during re-training showed lower CR magnitudes, suggesting that prior unpaired CS--US exposure may produce \enquote{learned irrelevance}, which suppresses subsequent learning. Future memory-savings designs should manipulate re-training parameters, include explicit learned-irrelevance controls, and exploit neural readouts to detect latent memory traces.
+
+\subsection{Additional limitations and future directions}
+
+A key limitation was statistical power, particularly for 10~s trace conditioning and LTM assays. Larger cohorts will allow more precise estimation of effect sizes, individual differences, and subtle learning dynamics.
+
+Further work is needed to disentangle temporal expectation from CS offset in delay conditioning by systematically decoupling CS duration from US timing. Modulating CS length or shifting US delivery within the CS will reveal whether CR termination is tied to interval timing or driven by CS offset.
+
+Repeated optovin stimulation elevates baseline locomotion, potentially reflecting arousal or sensitization. US-only sessions and variations in inter-US intervals will clarify whether arousal, TRPA1 kinetics, or photochemical effects drive this baseline shift. Non-aversive priming stimuli, such as optomotor responses or whole-field luminance changes, may provide cleaner baselines.
+
+Future paradigms could explore discriminative conditioning and operant learning using the same hardware by assigning different CS LEDs to different contingencies. Computational modeling of learning curves, extinction trajectories, and CR timing will provide a principled framework for inferring the algorithms governing associative learning.
+
+\subsection{Concluding remarks}
+
+This work establishes a versatile conditioning platform in larval \textit{Danio rerio} compatible with whole-brain imaging. Larvae learned temporally structured associations, expressed predictive motor suppression, bridged trace intervals up to 3~s, and exhibited NMDAR-dependent learning. Memory persisted for at least 3~h but could not yet be classified as protein-synthesis-dependent LTM, and memory savings were undetected. The combination of optical accessibility, genetic tractability, and compact brain size makes larval zebrafish uniquely suited for mapping how associative memories are formed, maintained, and expressed at the level of entire neural circuits. Future work integrating behavior, pharmacology, whole-brain activity mapping, and targeted perturbations promises to reveal the circuit motifs and computational strategies that underlie associative learning and temporal prediction.
