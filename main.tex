@@ -17,6 +17,7 @@
 % Layout and typography
 \usepackage{textcomp}  % probably optional; no explicit textcomp symbols seen
 \usepackage{microtype}
+\microtypesetup{expansion=false}
 \setlength{\emergencystretch}{2em}
 \hbadness=1500
 \vfuzz=1pt
@@ -43,6 +44,14 @@
 \DeclareSIUnit\Molar{M}
 \DeclareSIUnit\dpf{dpf}
 \DeclareSIUnit\fps{fps}
+
+\newcommand{\includeoptionalfigure}[2]{%
+  \IfFileExists{#2}{%
+    \includegraphics[width=#1\linewidth]{#2}%
+  }{%
+    \PackageWarning{paper}{Figure file `#2' not found; figure omitted}%
+  }%
+}
 
 % \usepackage{todonotes}
 
@@ -74,11 +83,11 @@
 
 \section{Results}
 
-\input{Sections/3_Results_1.tex}
+\input{sections/3_Results_1.tex}
 
-\input{Sections/4_Results_2.tex}
+% \input{Sections/4_Results_2.tex}
 
-\input{Sections/5_Results_3.tex}
+% \input{Sections/5_Results_3.tex}
 
 
 
@@ -88,7 +97,7 @@
 \begin{figure}
   \begin{fullwidth}
 
-    \includegraphics[width=0.95\linewidth]{Sections/Figures/Fig1/Fig1_test1.png}
+    \includeoptionalfigure{0.95}{Sections/Figures/Fig1/Fig1_test1.png}
 
     \caption{A refined classical conditioning paradigm reveals robust associative learning in larval zebrafish. Number of fish tested: Delay group, n=36; Control group, n=31.
       % In the heatmaps, colors represent the average/median scaled vigor in each tail movement.
@@ -112,7 +121,7 @@
 % region Figure 2
 \begin{figure}
   \begin{fullwidth}
-    \includegraphics[width=0.85\linewidth]{Sections/Figures/Fig2/Fig2_test1.png}
+    \includeoptionalfigure{0.85}{Sections/Figures/Fig2/Fig2_test1.png}
     \caption{
       Figure 2. A refined classical conditioning paradigm reveals robust associative learning in larval zebrafish.
       % (A) Experimental setup. Top-view schematic of the setup during CS presentation. A larva is head-fixed in agarose with eyes and tail free. Three LED pairs illuminate the arena: the right pair delivers the CS; the front pair provides basal illumination when no CS is present. The larva faces away from a larger LED that delivers the US. Diagram is not to scale except for the LEDs around the head, which are shown in their true relative positions.
@@ -140,7 +149,7 @@
 % region Figure 3
 \begin{figure}
   \begin{fullwidth}
-    \includegraphics[width=0.75\linewidth]{Sections/Figures/Fig3/Fig3_test1.png}
+    \includeoptionalfigure{0.75}{Sections/Figures/Fig3/Fig3_test1.png}
     \caption{
       Timing thing.
     }
@@ -153,7 +162,7 @@
 % region Figure 4
 \begin{figure}
   \begin{fullwidth}
-    \includegraphics[width=0.65\linewidth]{Sections/Figures/Fig4/Fig4_test1.png}
+    \includeoptionalfigure{0.65}{Sections/Figures/Fig4/Fig4_test1.png}
     \caption{
       Molecular mechanisms of associative learning.
       % (A) NMDA receptor dependence. Effect of MK-801 on delay (top) and trace (bottom) conditioning. Boxplots show the distribution of normalised vigour during Pre-Train, Early Test, and Late Test phases. Each dot represents the median vigour from 5 trials per fish. Boxes span the interquartile range (Q1--Q3), with a dashed line marking the median. Whiskers extend to 1.5 $\times$ IQR beyond Q1 and Q3; outliers beyond this range are plotted individually. Asterisks indicate significance (Mann-Whitney U and Wilcoxon signed-rank, Holm-Bonferroni corrected).
