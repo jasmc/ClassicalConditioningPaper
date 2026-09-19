@@ -1,5 +1,16 @@
 # List of Figures
 
+
+Figure 1: Experimental setup and head-fixed preparation, conditioning protocol, behavioral readout, identified conditioned response (CR), and a representative example of delay conditioning and control individual fish.
+
+Figure 2: Population-level results for delay conditioning, 3sTrace, and 10sTrace presented alongside controls.
+
+Figure 3: Statistical classification and identification of learners vs. non-learners.
+
+Figure 4: Detailed characterization of CR temporal dynamics over time (CS onset to US onset) calculated specifically by pooling the identified learners.
+
+
+
 ## Figure 1 — Experimental setup, behavioral preparation, conditioning protocols, and single-fish evidence of learning
 
 Illustrates the head-fixed larval zebrafish preparation, with the eyes and tail free, and identifies the visual conditioned stimulus (CS) and optovin-mediated unconditioned stimulus (US). It outlines the priming/habituation, pre-training, conditioning, and testing phases and shows the delay-conditioning and matched unpaired-control protocols. The figure also explains tail tracking and the calculation of tail-movement vigor, presents a representative optovin-evoked tail response, and shows raw behavioral data from representative individual larvae. Only delay-conditioning data are introduced here; trace conditioning first appears in Figure 2.

@@ -1,4 +1,39 @@
+% ** Materials & Methods
+
 \section{Materials and methods}
+
+Because vigor is undefined in the absence of movement (Materials and Methods), the heatmaps display the average scaled vigor across fish that exhibited tail movements within each time bin. Consequently, bins in which only a small subset of fish moved represent the average scaled vigor of that active subset, rather than population-wide immobility. Periods when most animals were immobile---such as the post-US immobility phase of the UR following the initial optovin-evoked burst---therefore do not appear uniformly dark, but instead reflect the residual activity of the few individuals that remained moving.
+% ! in the heatmaps, x values indicate the value of the right side of the bin
+The only difference between the protocols of the conditions we tested was the relative timing of the CS and US during this training phase.
+Two groups of larvae experienced trace conditioning, where in CS--US paired trials during the training phase CS and US were separated in time with no overlap by \SI{3}{\second} or \SI{10}{\second} trace intervals, respectively.
+To investigate the impact of trace interval duration, which is known to be a critical factor, we conditioned different groups of larvae under trace conditioning with trace intervals of \SI{3}{\second} (3sTrace) and \SI{10}{\second} (10sTrace).
+% (Gallistel and Gibbon, 2000; Raybuck and Lattal, 2014)
+
+
+
+
+
+\paragraph{Summary of Sample Sizes}
+For reference, the main experimental groups and sample sizes are summarized in Table~\ref{tab:groupsizes}.
+
+\begin{table}[ht]
+  \centering
+  \caption{Number of fish per group for the refined conditioning paradigm.}
+  \label{tab:groupsizes}
+  \begin{tabular}{lcc}
+    \toprule
+    Condition & Test (paired) & Control (unpaired) \\
+    \midrule
+    Delay     & 36            & 31                 \\
+     & 34            & 36                 \\
+    3sTrace   & 79            & 83                 \\
+    10sTrace  & 11            & 15                 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
 
 \subsection{Animals and husbandry}
 
@@ -131,7 +166,7 @@ During the training phase of all conditioning protocols, larvae experienced 50 C
 
 In the delay-conditioning paradigm, the US onset occurred \SI{9}{\second} after CS onset, lasting \SI{100}{\milli\second}.
 
-Three trace protocols were tested: (i) an incremental-trace protocol (incTrace) in which the trace interval was \SI{0.5}{\second} for the first 10 paired training trials, \SI{3}{\second} for the last 10 paired trials, and increased linearly from \SI{0.5}{\second} to \SI{3}{\second} across the intermediate trials; (ii) a constant-\SI{3}{\second} trace protocol (3sTrace), in which the interval between CS offset and US onset was fixed at \SI{3}{\second} for all paired trials; and (iii) a constant-\SI{10}{\second} trace protocol (10sTrace), in which the US occurred \SI{10}{\second} after CS offset.
+Three trace protocols were tested: (i) an incremental-trace protocol () in which the trace interval was \SI{0.5}{\second} for the first 10 paired training trials, \SI{3}{\second} for the last 10 paired trials, and increased linearly from \SI{0.5}{\second} to \SI{3}{\second} across the intermediate trials; (ii) a constant-\SI{3}{\second} trace protocol (3sTrace), in which the interval between CS offset and US onset was fixed at \SI{3}{\second} for all paired trials; and (iii) a constant-\SI{10}{\second} trace protocol (10sTrace), in which the US occurred \SI{10}{\second} after CS offset.
 
 Delay conditioning was performed in \SIrange{6}{9}{\dpf} larvae, incremental-trace conditioning in \SIrange{6}{8}{\dpf} larvae, and constant-\SI{3}{\second} and constant-\SI{10}{\second} trace conditioning in \SI{6}{\dpf} and \SI{7}{\dpf} larvae, allowing comparison with established larval fear- and aversive-conditioning paradigms \citep{aizenbergCerebellarDependentLearningLarval2011,matsudaGranuleCellsControl2017}.
 
@@ -231,7 +266,7 @@ To visualize changes in scaled vigor over time across blocks of trials, binned s
 
 To summarize responses per trial, a ``normalized vigor'' metric was computed as the ratio of mean raw vigor in a paradigm-specific CR interval to the mean raw vigor in the 15-s pre-CS baseline. Because vigor was defined only during active movement, all NaN samples (immobility) were excluded from these means, so normalized vigor captured changes in movement intensity conditional on movement occurring.
 
-CR intervals were defined a priori based on scaled-vigor time courses and qualitative heatmaps, with the goal of capturing anticipatory suppression while avoiding contamination by the US-evoked response. For CS-aligned analyses, CR intervals were defined as follows: for Delay, \SIrange{0}{9}{\second} after CS onset (covering the CS while excluding the UR); for incTrace, \SIrange{0}{10.5}{\second} after CS onset (covering the entire CS and the initial \SI{0.5}{\second} trace interval, matching the early training trials); for 3sTrace, \SIrange{0}{13}{\second} after CS onset (covering the CS and the \SI{3}{\second} trace interval); and for 10sTrace, the \SI{10}{\second} trace interval between CS offset and expected US onset. For US-aligned analyses, normalized vigor was computed using the same procedure but aligning trials to US onset and defining CR intervals as negative time windows preceding the US (e.g. \SIrange{-9}{0}{\second} for Delay and \SIrange{-13}{0}{\second} for 3sTrace).
+CR intervals were defined a priori based on scaled-vigor time courses and qualitative heatmaps, with the goal of capturing anticipatory suppression while avoiding contamination by the US-evoked response. For CS-aligned analyses, CR intervals were defined as follows: for Delay, \SIrange{0}{9}{\second} after CS onset (covering the CS while excluding the UR); for, \SIrange{0}{10.5}{\second} after CS onset (covering the entire CS and the initial \SI{0.5}{\second} trace interval, matching the early training trials); for 3sTrace, \SIrange{0}{13}{\second} after CS onset (covering the CS and the \SI{3}{\second} trace interval); and for 10sTrace, the \SI{10}{\second} trace interval between CS offset and expected US onset. For US-aligned analyses, normalized vigor was computed using the same procedure but aligning trials to US onset and defining CR intervals as negative time windows preceding the US (e.g. \SIrange{-9}{0}{\second} for Delay and \SIrange{-13}{0}{\second} for 3sTrace).
 
 \paragraph{Pooled vigor}
 
@@ -250,7 +285,7 @@ Unless otherwise indicated (e.g.\ in the priming/habituation validation experime
 
 \paragraph{Number of animals included in the analysis}
 
-A total of 87 larval zebrafish were excluded from the refined-conditioning behavioral analyses based on the predefined criteria described above. The final numbers of animals included were as follows. For the test groups: 36 fish in Delay, 34 in incTrace, 79 in 3sTrace, and 11 in 10sTrace. For the control groups: 31 fish in Delay, 36 in incTrace, 83 in 3sTrace, and 15 in 10sTrace. The corresponding numbers of excluded animals were: 12 in Delay test, 14 in incTrace test, 10 in 3sTrace test, and 6 in 10sTrace test; and 15 in Delay control, 12 in incTrace control, 8 in 3sTrace control, and 4 in 10sTrace control.
+A total of 87 larval zebrafish were excluded from the refined-conditioning behavioral analyses based on the predefined criteria described above. The final numbers of animals included were as follows. For the test groups: 36 fish in Delay, 34 in, 79 in 3sTrace, and 11 in 10sTrace. For the control groups: 31 fish in Delay, 36 in, 83 in 3sTrace, and 15 in 10sTrace. The corresponding numbers of excluded animals were: 12 in Delay test, 14 in test, 10 in 3sTrace test, and 6 in 10sTrace test; and 15 in Delay control, 12 in control, 8 in 3sTrace control, and 4 in 10sTrace control.
 
 In the pharmacological experiments with the NMDA receptor antagonist MK-801, larvae were analyzed under three concentrations (0, 10, and \SI{100}{\micro\Molar}) in Delay conditioning and under two concentrations (0 and \SI{100}{\micro\Molar}) in Trace conditioning. In the Delay experiment, 14 control and 16 Delay fish were analyzed in the 0~\si{\micro\Molar} MK-801 condition, 15 control and 15 Delay fish in the 10~\si{\micro\Molar} condition, and 13 control and 13 Delay fish in the 100~\si{\micro\Molar} condition. In the Trace experiment, 13 control and 17 Trace fish were analyzed in the 0~\si{\micro\Molar} MK-801 condition and 16 control and 17 Trace fish in the 100~\si{\micro\Molar} condition. Based on the same predefined behavioral inclusion criteria, 3 control and 1 Delay fish were excluded from the 0~\si{\micro\Molar} Delay groups, 1 control and 1 Delay fish from the 10~\si{\micro\Molar} Delay groups, and 2 control and 2 Delay fish from the 100~\si{\micro\Molar} Delay groups; in the Trace experiment, 5 control and 1 Trace fish were excluded from the 0~\si{\micro\Molar} groups and 2 control and 1 Trace fish from the 100~\si{\micro\Molar} groups.
 
