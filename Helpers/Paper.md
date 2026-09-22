@@ -26,15 +26,11 @@ Here, we developed a head-fixed larval zebrafish conditioning assay designed to 
 
 Using this framework, we tested whether larvae acquire both delay and trace associations. We show that head-fixed larvae develop learned suppression of tail-movement vigor after CS onset in delay conditioning and in a short-trace protocol with a 3-s stimulus-free interval. This suppression is absent in matched unpaired controls and diminishes during testing, supporting an associative interpretation. Under comparable conditions, conditioning was not detected at the population level with a 10-s trace interval, suggesting that longer temporal gaps impose a stronger constraint on this assay or preparation. Together, these findings establish predictive motor suppression as a behavioral readout of associative learning in head-fixed larval zebrafish and provide a foundation for future cellular-resolution studies of the neural mechanisms that support temporal association.
 
-Not sure whether trace should appear in the first figure or:
-
-fig 1 only with delay single fish and pop. data at the (end)
-
-fig 2 with all population data
+Figure 1 should introduce the setup, protocol, and vigor readout, then show representative Delay, 3sTrace, and unpaired-control fish. Dedicated US-response characterization belongs in supplementary material or later analyses. Figure 2 should contain the population-level comparisons for Delay, 3sTrace, and 10sTrace.
 
 ## Results
 
-**When showing data in Figure 1, only show delay conditioning larval data. Keep trace first appearance to figure 2.**
+**Figure 1 should show the setup, protocol, tail-angle-to-vigor readout, and representative Delay, 3sTrace, and unpaired-control larvae. Keep the population-level Delay, 3sTrace, and 10sTrace comparisons in Figure 2.**
 
 ### Result 1. A head-fixed optovin-based assay for classical conditioning in larval zebrafish
 
@@ -52,13 +48,13 @@ This design provides a behavioral baseline from which suppression can be detecte
 
 #### Figure 1 — Experimental setup, behavioral preparation, conditioning protocols, and single-fish evidence of learning
 
-Include the head-fixed preparation with the tail free to move; the positions and identities of the visual CS and optovin-mediated US; the complete experimental sequence, including priming/habituation, pre-training, training, and testing; protocol diagrams for the unpaired control, delay, 3sTrace, and 10sTrace conditions; tail tracking and calculation of movement vigor; representative raw behavioral data from a small number of individual larvae; and a representative optovin-evoked tail response.
+Include the head-fixed preparation with the tail free to move; the positions and identities of the visual CS and optovin-mediated US; the complete experimental sequence, including priming/habituation, pre-training, training, and testing; protocol diagrams for the unpaired control, Delay, 3sTrace, and 10sTrace conditions; tail angle over time and its conversion to movement vigor; and representative Delay, 3sTrace, and unpaired-control individual examples. Put a representative optovin-evoked tail response in supplementary material or later individual-variability analyses.
 
 - Setup schematic
 
 - CS and US arrangement
 
-- Example US-evoked tail response
+- Tail angle over time and vigor calculation
 
 - Basic protocol phases: priming/habituation, pre-training, conditioning, and testing for delay and control conditions
 
@@ -66,7 +62,7 @@ Include the head-fixed preparation with the tail free to move; the positions and
 
 - Tail-movement vigor as behavioral readout:
 
-- Representative individual fish
+- Representative 3sTrace and unpaired-control fish
 
 ### Result 2. Delay and short-trace conditioning produce learned suppression of tail-movement vigor
 
@@ -74,11 +70,11 @@ Delay conditioning validates the assay, whereas 3sTrace conditioning provides th
 
 Larvae trained with delay CS–US pairings develop a conditioned reduction in tail-movement vigor after CS onset, whereas controls with randomized/unpaired CS timing do not.
 
-Larvae can learn when a temporal gap separates CS and US. The MVP trace-conditioning result should focus on the 3sTrace condition, while treating 10sTrace cautiously or as supplementary.
+Larvae can learn when a temporal gap separates CS and US. The MVP trace-conditioning result focuses on 3sTrace. The 10sTrace condition remains in the main paper as the third Figure 2 column, but is interpreted cautiously as a weak or inconclusive boundary result.
 
 #### Figure 2 — Population-level evidence for delay and trace conditioning
 
-Organize the population analyses by condition: delay versus its matched control, 3sTrace versus its matched control, and 10sTrace versus its matched control. Include population heatmaps aligned to CS onset, showing the development and subsequent extinction of vigor suppression; trial-by-trial or trial-block quantification of normalized vigor within the condition-specific conditioned-response interval; direct comparisons of late pre-training and early testing to test for learned suppression; late-testing data, where useful, to demonstrate extinction; matched control comparisons; and a concise comparison across delay, 3sTrace, and 10sTrace conditions.
+Organize the population analyses in three matched cohort-pair columns: unpaired control versus Delay, unpaired control versus 3sTrace, and unpaired control versus 10sTrace. The first row should contain CS-aligned heatmaps; the second should report a block-level CR ratio (response vigor relative to pre-CS baseline vigor) for Pre-Train, Early Test, and Late Test; and the third should show trial-by-trial CR-ratio trajectories across pre-training, training, and testing. Use the same response-window definition within each condition throughout the figure, and report its exact formula in the legend and Methods.
 
 This figure should validate that the priming procedure establishes sufficient baseline movement for detecting a conditioned reduction in vigor.
 
@@ -88,7 +84,7 @@ This figure should validate that the priming procedure establishes sufficient ba
 
 - Organize the population evidence by matched comparison: control vs delay, control vs 3sTrace, and control vs 10sTrace.
 
-- Show CS-aligned population heatmaps and trial-by-trial or trial-block normalized vigor within a prespecified, condition-specific conditioned-response interval.
+- Show CS-aligned population heatmaps, block-level CR ratios for Pre-Train, Early Test, and Late Test, and trial-by-trial CR-ratio trajectories within a prespecified, condition-specific conditioned-response interval.
 
 - Compare late pre-training with early testing to quantify learned suppression, and use late testing where informative to demonstrate extinction.
 
@@ -106,7 +102,7 @@ This figure should validate that the priming procedure establishes sufficient ba
 
 - Evidence that trace learning is weaker/slower than delay conditioning, if supported by final analysis
 
-- 10sTrace only if presented as weak/subtle/boundary condition
+- Keep 10sTrace as the third Figure 2 column; present it as a weak/subtle boundary condition rather than evidence of successful long-trace learning or an absolute temporal limit.
 
 ### Result 3. A reproducible classification captures heterogeneous expression of learning. Conditioned suppression varies across individuals and is captured by a reproducible learning score
 
@@ -169,6 +165,89 @@ The timing analysis must not be inherited circularly from learner classification
 - Catch trials can help show that suppression is predictive rather than a direct US response.
 
 - Delay and trace responses may differ in duration and timing.
+
+## Integrated behavioral roadmap: Milestones 1 and 2
+
+The material below integrates the first two evidence milestones into this manuscript blueprint. The default manuscript is the behavioral foundation described in Milestone 1. The preferred expansion adds the learner-classification and CR-dynamics work described in Milestone 2, but only when its timing analyses meet the criteria below. Mechanistic, retention, and imaging extensions remain outside this behavioral manuscript unless they independently meet their own evidentiary standards.
+
+### Manuscript scope and claim boundary
+
+**Working title for the behavioral foundation:** *A head-fixed classical conditioning paradigm for delay and trace conditioning in larval zebrafish.*
+
+**Primary question:** Can head-fixed larval zebrafish acquire Delay and 3sTrace associations, expressed as a learned change in tail-movement vigor?
+
+The central behavioral claim is that head-fixed larvae acquire Delay and short-trace associations expressed as learned suppression of tail-movement vigor. Delay conditioning validates the assay; 3sTrace conditioning is the principal advance because it demonstrates association across a short stimulus-free interval. The 10sTrace condition is a boundary test only. It should be described as weak, variable, or not detected at the population level under the tested conditions—not as evidence of successful long-trace learning or as a demonstrated temporal limit.
+
+This foundation supports learned suppression and temporal bridging across the 3-s interval. It does not, on its own, establish working memory, a neural mechanism, or prediction of the precise US time. Use *predictive* only if the timing analyses below show that response timing varies with the trained CS--US interval or is more consistently aligned to expected US onset than to CS onset. Otherwise use *learned*, *timed*, or *temporally organized* suppression.
+
+### Evidence required for the behavioral foundation
+
+- The main figures should document the head-fixed, free-tail preparation; visual CS; optovin-mediated US; the priming/habituation procedure; and the tail-angle-to-vigor behavioral readout. Document robust US-evoked movement in supplementary material rather than a dedicated Figure 1 panel.
+- Present Delay, 3sTrace, 10sTrace, and matched randomized unpaired-control protocols. Keep 10sTrace as the third main Figure 2 comparison while limiting its interpretation to a concise boundary result.
+- Include representative individual data, but keep matched population analyses as the primary evidence for learning.
+- Show CS-aligned population heatmaps; trial- or block-resolved vigor change; and late-pre-training versus early-test comparisons. Include late testing when it is used to demonstrate extinction.
+- Report sample sizes, exclusions, normalization, response windows, and statistical tests in the figure legends or Methods.
+- Exclude mechanistic perturbations, retention, puromycin, savings/reacquisition, learner classification, and imaging from the foundation claim.
+
+**Principal risk:** Delay conditioning validates the assay but is not the novelty. The manuscript depends on statistically and behaviorally convincing evidence for 3sTrace conditioning.
+
+**Short pitch:** The manuscript establishes a head-fixed larval-zebrafish classical-conditioning assay using a visual CS and an optovin-mediated US. Brief, unpaired optovin stimuli establish the active baseline required to detect a suppressive CR. Delay and 3sTrace pairings produce CS-locked reductions in tail-movement vigor that develop during training and decline when the US is withheld, providing a behavioral foundation for future studies of temporal associative learning.
+
+### Learner classification and CR dynamics: optional expansion
+
+**Primary questions:** Which individual larvae express evidence of learned suppression, and when is that suppression expressed relative to the expected US?
+
+Learner classification must be transparent and reproducible. It should use a prespecified continuous learning measure; fully state its inputs, preprocessing, response intervals, threshold derivation, and uncertainty; show the score distribution before imposing a binary label; report false positives in controls and assignment stability; and distinguish behavioral eligibility from learner classification. Eligibility criteria such as reliable URs and sufficient movement establish whether a fish can be analyzed, not whether it learned.
+
+The CR-dynamics analysis should use catch trials and/or early test trials without US contamination. Show learner-resolved and all-eligible-fish time courses aligned separately to CS onset, CS offset, and expected US onset; acquisition across trials or blocks; prespecified timing measures; and direct Delay-versus-3sTrace comparisons. Include uncertainty estimates and sensitivity analyses using alternative metrics and windows. The 10sTrace condition enters this expansion only as an interpretable secondary boundary analysis.
+
+Classification and timing must remain analytically independent. A response window used to classify a fish as a learner cannot independently establish that its response is timed to the expected US. Temporal bridging—suppression extending beyond CS offset into the trace interval—is distinct from predictive timing. The available evidence supports the former for 3sTrace; the latter requires the formal timing comparisons above.
+
+**Principal risks:** Catch trials and learner-resolved subgroups may be too sparse for decisive timing comparisons. If classification is sound but the timing tests are inconclusive, retain the learner-heterogeneity and CR-dynamics contribution while removing predictive language from the title, abstract, and central claim.
+
+**Short pitch:** A continuous, validated learning score describes heterogeneity in conditioned suppression without implying discrete biological learner classes. Independent catch-trial and early-test analyses then characterize how suppression develops and whether its temporal profile differs between Delay and 3sTrace conditioning.
+
+## Supplementary-figure plan for the integrated behavioral manuscript
+
+### Supplementary Figure S1 — Optovin-US characterization
+
+Include responses across violet-light pulse durations and optovin concentrations; response probability, latency, or reliability where available; tail-response vigor following US onset; and the rationale for the final parameters. The current protocol uses 100-ms violet-light stimulation in 10 \(\mu\)M optovin and reports robust tail responses.
+
+### Supplementary Figure S2 — Priming/habituation and maintenance of an active baseline
+
+Show baseline activity before and after priming, fraction of larvae moving, number of movements, fraction of time moving, and baseline vigor across relevant protocol stages. Include optovin-versus-violet-light comparisons where complete. This figure should establish that priming creates sufficient baseline movement to detect a suppressive CR.
+
+### Supplementary Figure S3 — Violet-light-only control
+
+Show the Delay-like protocol without optovin and its matched comparison, demonstrating that violet-light stimulation alone is not an effective US under the tested conditions.
+
+### Supplementary Figure S4 — Individual-larva learning trajectories
+
+Include additional raw examples; individual normalized-vigor trajectories across pre-training, training, and testing; inter-individual variability; and the individual data underlying population phase comparisons. These examples should illustrate variability while leaving population comparisons as the primary learning evidence.
+
+### Supplementary Figure S5 — Catch-trial and temporal-response analyses
+
+Include condition-specific catch trials across training; pooled CS- and, where informative, US-aligned traces; evidence that the 3sTrace response extends beyond CS offset into the trace interval; and the weaker or more diffuse 10sTrace response. This provides temporal detail without overloading the main population figure.
+
+### Supplementary Figure S6 — Control and analysis validation
+
+Include CS- and US-aligned randomized-control analyses; verification of no consistent anticipatory control response; condition-specific response intervals; the consequences of normalization and baseline requirements; inclusion/exclusion criteria; and sensitivity analyses where available. Because Delay, 3sTrace, and 10sTrace use different CR intervals and normalized vigor requires movement in baseline and response intervals, these choices must be transparent.
+
+### Supplementary Figure S7 — Learner-classification definition, validation, and uncertainty
+
+Provide the complete learning-score definition, inputs, preprocessing, trials and intervals, matched-control distributions, threshold derivation, score and assignment uncertainty, false positives, borderline fish, alternative-threshold sensitivity, resampling or leave-one-trial-out stability, and the number and identity of animals lacking adequate data.
+
+### Supplementary Figure S8 — Individual learner and non-learner trajectories
+
+Show trial-by-trial heatmaps for classifier-positive, classifier-negative, intermediate, and borderline larvae; normalized-vigor trajectories; baseline activity and valid-trial counts; acquisition/extinction patterns; and cases where the score and visible response profile disagree. Distinguish genuine absence of suppression from low baseline activity, missing estimates, or responses outside the classification window.
+
+### Supplementary Figure S9 — CR-dynamics controls and timing robustness
+
+Include matched-control timing analyses; CS- and expected-US-aligned control traces; alternative metrics and windows; window-free timing analyses where feasible; bootstrap uncertainty; sensitivity to individual catch trials; analyses excluding classification trials; and matched all-fish, classifier-positive, and classifier-negative results.
+
+### Supplementary Figure S10 — Delay-versus-3sTrace temporal comparison
+
+Show Delay and 3sTrace traces on common CS-aligned and expected-US-aligned axes; onset, peak, and offset estimates; suppression before and after CS offset; the fraction or magnitude of suppression in the trace interval; direct statistical comparisons; and tests of whether apparent timing differences remain after accounting for response amplitude and uncertainty. Explicitly distinguish temporal bridging from predictive timing.
 
 ## Discussion outline
 

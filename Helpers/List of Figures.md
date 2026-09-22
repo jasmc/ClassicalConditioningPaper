@@ -1,28 +1,61 @@
 # List of Figures
 
-
-Figure 1: Experimental setup and head-fixed preparation, conditioning protocol, behavioral readout, identified conditioned response (CR), and a representative example of delay conditioning and control individual fish.
-
-Figure 2: Population-level results for delay conditioning, 3sTrace, and 10sTrace presented alongside controls.
-
-Figure 3: Statistical classification and identification of learners vs. non-learners.
-
-Figure 4: Detailed characterization of CR temporal dynamics over time (CS onset to US onset) calculated specifically by pooling the identified learners.
+Draft panel plan. Update panel letters, sample sizes, and final metrics when the figure artwork and legends are finalized.
 
 
 
 ## Figure 1 — Experimental setup, behavioral preparation, conditioning protocols, and single-fish evidence of learning
 
-Illustrates the head-fixed larval zebrafish preparation, with the eyes and tail free, and identifies the visual conditioned stimulus (CS) and optovin-mediated unconditioned stimulus (US). It outlines the priming/habituation, pre-training, conditioning, and testing phases and shows the delay-conditioning and matched unpaired-control protocols. The figure also explains tail tracking and the calculation of tail-movement vigor, presents a representative optovin-evoked tail response, and shows raw behavioral data from representative individual larvae. Only delay-conditioning data are introduced here; trace conditioning first appears in Figure 2.
+Illustrates the head-fixed larval-zebrafish preparation, conditioning protocol, behavioral readout, and representative individual examples from Delay, 3sTrace, and unpaired-control larvae; dedicated US-response characterization is supplementary.
+
+- **A. Experimental setup:** Head-fixed larva with eyes and tail free; positions of the visual CS LEDs, basal illumination, and optovin-mediated US light.
+- **B. Conditioning contingencies:** Priming/habituation, pre-training, training, and testing; Delay, 3sTrace, 10sTrace, and randomized unpaired-control timing.
+- **C. Tail angle over time:** Representative raw tail-angle trace, illustrating the kinematic signal used to quantify movement.
+- **D. Vigor calculation:** Conversion of tail angle over time into tail-movement vigor and baseline-normalized vigor.
+- **E. Delay example:** Trial-by-time vigor heatmap or equivalent single-fish view showing learned suppression during the CS--US interval and its expression in early testing.
+- **F. Primary 3sTrace example:** Equivalent single-fish view showing the emergence of CS-locked suppression and its extension into the trace interval.
+- **G. Unpaired-control example:** Equivalent single-fish heatmap showing no sustained CS-locked suppression.
+
+% todo place dedicated optovin-US response characterization in Supplementary Figure S1 and confirm final Figure 1 letters
 
 ## Figure 2 — Population-level evidence for delay and trace conditioning
 
-Presents the principal population-level evidence for learned suppression of tail-movement vigor in delay, 3-s trace, and 10-s trace conditioning, each compared with its matched unpaired control. CS-aligned heatmaps and trial- or block-level normalized-vigor measurements show how suppression develops during training and diminishes during testing. Comparisons between late pre-training and early testing quantify learning, while late-testing measurements demonstrate extinction where informative. The 3-s trace results show suppression extending into the stimulus-free trace interval. The weaker and less consistent 10-s trace result is treated as a boundary condition rather than evidence of successful learning or an absolute temporal limit. The figure also shows that priming establishes sufficient baseline movement to detect a conditioned reduction in vigor.
+Presents the principal population-level evidence for learned suppression of tail-movement vigor in Delay, 3sTrace, and 10sTrace conditioning, each compared with its matched unpaired control. The figure is organized in three cohort-pair columns and three analysis rows: CS-aligned heatmaps, block-level CR ratios, and trial-by-trial CR ratios.
+
+- **A. Delay cohort pair:** CS-aligned heatmaps for matched unpaired-control and Delay larvae.
+- **B. 3sTrace cohort pair:** Equivalent heatmaps for matched unpaired-control and 3sTrace larvae.
+- **C. 10sTrace cohort pair:** Equivalent heatmaps for matched unpaired-control and 10sTrace larvae; shown as a main comparison but interpreted as an inconclusive boundary result.
+- **D. Delay block-level CR ratio:** Response vigor relative to baseline vigor in Pre-Train, Early Test, and Late Test.
+- **E. 3sTrace block-level CR ratio:** The same block comparison for the 3sTrace cohort pair.
+- **F. 10sTrace block-level CR ratio:** The same block comparison for the 10sTrace cohort pair.
+- **G. Delay trial-by-trial CR ratio:** Acquisition and extinction across pre-training, training, and testing.
+- **H. 3sTrace trial-by-trial CR ratio:** The corresponding trajectory for 3sTrace.
+- **I. 10sTrace trial-by-trial CR ratio:** The corresponding trajectory for 10sTrace.
+
+% todo define the final CR-ratio formula and response window consistently in the figure legend and Materials and Methods
 
 ## Figure 3 — Learner classification
 
-Describes a reproducible classification of individual variation in conditioned suppression. It introduces the prespecified continuous learning measure, its behavioral inputs and preprocessing, and the distinction between eligibility criteria and learner classification. Continuous score distributions for delay conditioning, 3-s trace conditioning, and their matched controls are shown before application of a binary threshold. The figure reports the threshold and its uncertainty, classifier-positive fractions, false positives in controls, and assignment stability or sensitivity to alternative thresholds. Paired changes from late pre-training to early testing and representative positive, negative, intermediate, and borderline fish illustrate behavioral heterogeneity. An analysis of all eligible fish confirms that the population-level learning result does not depend on classification.
+Describes a reproducible classification of individual variation in conditioned suppression. Continuous scores are shown before binary labels so the classifier describes heterogeneity rather than discrete biological classes.
+
+- **A. Classification workflow:** Behavioral eligibility, preprocessing, continuous learning score, and threshold definition.
+- **B. Continuous score distributions:** Delay, 3sTrace, and matched unpaired-control distributions before binary classification.
+- **C. Classification performance and uncertainty:** Threshold, false-positive control assignments, score uncertainty, and assignment stability.
+- **D. Learner fractions:** Classifier-positive proportions by condition with uncertainty.
+- **E. Individual paired change:** Pre-Train-to-Early-Test changes for all eligible larvae, displayed before or alongside classification.
+- **F. Representative trajectories:** Classifier-positive, classifier-negative, intermediate, and borderline individual examples.
+- **G. All-fish validation:** Population-level result using all eligible larvae, showing that the central conclusion does not depend on classification.
 
 ## Figure 4 — Conditioned-response dynamics and learned timed behavioral suppression
 
-Shows how conditioned motor suppression emerges across training and how its timing relates to CS onset and the expected US. Catch-trial and early-test time courses for delay and 3-s trace conditioning are presented for classifier-positive fish and for all eligible fish, aligned both to the CS and to the expected US. The figure quantifies the development of suppression across trials or blocks using prespecified timing measures such as response onset, peak, center of mass, or offset. It directly compares delay and 3-s trace responses, including suppression within the trace interval, and tests whether expected-US alignment explains response timing better than CS alignment. Sensitivity analyses use alternative measures or windows, and the timing analysis is kept independent of learner classification.
+Shows pooled learner responses to characterize how conditioned motor suppression develops across training and how its timing relates to CS onset, CS offset, and expected US onset. Timing analyses must remain independent of the features used for learner classification.
+
+- **A. Delay CR dynamics:** Learner-pooled catch-trial and/or early-test traces aligned to CS onset across training blocks.
+- **B. 3sTrace CR dynamics:** Equivalent learner-pooled traces, including the stimulus-free trace interval.
+- **C. Expected-US alignment:** Delay and 3sTrace responses realigned to expected US onset.
+- **D. Timing metrics:** Prespecified onset, peak, center-of-mass, and/or offset estimates with uncertainty.
+- **E. Delay-versus-3sTrace comparison:** Direct comparison of response timing, duration, and suppression in the trace interval.
+- **F. All-eligible-fish validation:** Corresponding dynamics without learner-based selection.
+- **G. Robustness checks:** Alternative windows or metrics, control traces, and analyses excluding trials used for classification.
+
+% todo retain predictive-timing language only if the formal timing comparison supports it; temporal bridging is the weaker claim supported by suppression beyond CS offset

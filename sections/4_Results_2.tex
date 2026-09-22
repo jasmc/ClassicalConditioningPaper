@@ -1,140 +1,77 @@
-\subsection{Population-Level Analysis Confirms Learning in both Delay and Trace Conditioning}
+\subsection{Population-Level Analysis Confirms Learning in Delay Conditioning and Short-Trace Conditioning}
+% region Population-Level Analysis
+% Transition from representative single-fish examples to population-level analysis
+The examples above illustrate the form of the behavioral change in individual larvae, but they do not establish whether it is reproducible across animals. We therefore quantified CS-aligned tail movement across larvae within each conditioning condition and compared paired groups with their matched unpaired controls. This population-level analysis tested whether CS--US pairing produced a consistent change in tail-movement vigor and whether that change persisted when the CS was subsequently presented alone.
 
+% Define trace intervals and the comparison of short- and long-trace conditioning
+In the trace-conditioning protocols, the CS and US did not overlap: the US was delivered either \SI{3}{\second} (3sTrace) or \SI{10}{\second} (10sTrace) after CS offset. Comparing these conditions with Delay conditioning allowed us to ask whether the assay supported learning across a short stimulus-free interval and whether performance changed when that interval was extended.
 
-
-
-
-\subsection{Population-Level Analysis Confirms Learning in 3 s Trace Conditioning}
-
-% Define trace conditioning intervals
-In subsequent experiments, we investigated whether larvae could form associations between temporally separated events using trace conditioning protocols. Under these protocols, during Train, CS was temporally separated from US by \SI{3}{\second} (3sTrace) or \SI{10}{\second} (10sTrace; \FIG{fig1} XXXX).
-
-
-% region Pop. Heatmaps
+% region Population Heatmaps
+% Introduce CS-aligned population heatmaps
 \paragraph{Population Heatmaps}
 
-% todo 3sTrace
+% Explain active-fish interpretation of scaled-vigor heatmaps
+For each condition, we aligned scaled-vigor measurements to CS onset and aggregated the data across larvae (Materials and Methods). The resulting heatmaps show the mean scaled vigor among fish that moved within each time bin. Because vigor is undefined during immobility, these plots describe movement intensity in the active subset of fish rather than the fraction of the population that moved. Consequently, a non-dark bin does not imply that all larvae were active; it may reflect residual movement in a small subset of fish.
 
-To capture these trends, we aligned and aggregated scaled vigor data from multiple fish for each experimental condition relative to CS onset (Materials and Methods).
+% Compare Delay and 3sTrace heatmaps
+\paragraph{Delay and 3sTrace Conditioning}
 
-the CR first appeared near CS offset, close to the expected US time. As conditioning progressed, the CR shifted earlier to occur shortly after CS onset. During testing, the CR was evident in early trials but extinguished over time, leaving only a mild, startle-like response similar to controls.
+% Describe heatmap evidence for acquisition and extinction in paired groups
+In the Delay and 3sTrace groups (\FIG{fig2} A,B), the CS--US pairing was followed by a progressive reduction in scaled vigor during training. The reduction was most evident around the part of the trial preceding the expected US, persisted into the first CS-only test trials, and weakened over later test trials. Thus, the heatmaps provided a qualitative population-level signature of acquisition followed by extinction in both the delay and short-trace protocols.
 
+% Contrast paired groups with matched unpaired controls
+The corresponding unpaired controls did not show a sustained CS-locked reduction in vigor (\FIG{fig2} A--C). Their CS-aligned activity was broadly stable across the experiment, apart from a brief increase during CS presentation. Because US presentations were intentionally unpaired and occurred at different times in different control larvae, US-evoked responses were temporally dispersed in CS-aligned population heatmaps. The contrast with the paired groups therefore supports the interpretation that the suppression was linked to the CS--US contingency rather than to repeated stimulation or a general change in motor output.
 
-When the trace interval was extended to \SI{10}{\second}, conditioning became substantially more difficult. Heatmaps of pooled scaled vigor revealed only a subtle suppression that developed after several conditioning trials, localized primarily within the trace interval (between CS offset and US onset). This weak and delayed reduction---absent in control fish---suggests that some associative learning can occur even across this extended temporal gap, though with greatly diminished strength.
-%! The 10sTrace heatmaps lacked the clear CS-locked suppression seen in shorter traces, showing instead only a modest reduction in vigor during the trace interval.
+% Describe 10sTrace as the third main Figure 2 comparison
+\paragraph{10sTrace Conditioning}
 
-The UR remained evident during training as a bright band of elevated vigor (\textasciitilde\SI{9}{\second} after CS onset in Delay, Sup. Fig. for US-aligned data...).
+% Report the weak and inconclusive 10sTrace population pattern
+The 10sTrace condition was retained as the third comparison in Figure 2 (\FIG{fig2} C) to test the boundary of the assay across a longer stimulus-free interval. Extending the trace interval to \SI{10}{\second} markedly reduced the population-level effect. The 10sTrace heatmaps showed, at most, a weak reduction in vigor during the interval between CS offset and US onset. This pattern was not consistently distinguishable from the matched control response at the population level. Thus, although 10sTrace is presented alongside Delay and 3sTrace, it does not provide clear population-level evidence of conditioning under the present protocol; the data nevertheless do not exclude learning in individual larvae or under different training conditions.
+% todo confirm the final Fig. 2C panel assignment for 10sTrace and its matched control
 
+% Describe UR alignment and the US-aligned control analysis
+\paragraph{Unconditioned Responses and Control Alignment}
 
+% Explain why the UR is dispersed in CS-aligned control heatmaps
+In paired groups, the optovin-mediated unconditioned response (UR) remained visible during training as a band of elevated vigor at the expected US time. In contrast, the temporally varied US schedule in the unpaired controls dispersed the UR in CS-aligned plots. When control data were aligned to US onset, activity before the US showed no systematic suppression or build-up (Sup. Fig. ???). This analysis provides an additional control for the possibility that changes in the paired groups were driven by events other than the CS--US contingency.
+% todo add the final supplementary-figure reference for the US-aligned control analysis
 
-% Transition from single-fish examples to population analysis
-After qualitatively assessing individual learning trajectories, we next analyzed responses at the population level.
-To determine whether the response patterns observed in individual fish were consistent across animals, we pooled CS-aligned tail-movement data for each conditioning group.
+% region Block-Level Statistics
+% Introduce predefined block-level quantification of learned suppression and extinction
+\paragraph{Block-Level Quantification of Conditioned Suppression}
 
+% Define the response-over-baseline CR ratio and Pre-Train, Early Test, and Late Test blocks
+To quantify the population effect, we calculated a CR ratio by dividing vigor in the prespecified response window by vigor in the pre-CS baseline window (Materials and Methods). We compared three predefined five-trial blocks: the final five pre-training trials (Pre-Train, PT), the first five test trials (Early Test, ET), and the final five test trials (Late Test, LT). The ET block assessed expression of a learned response in the absence of the US, whereas the LT block assessed its decline during repeated CS-alone presentations.
 
-% !!!! vigor is undefined in the absence of movement (Materials and Methods). the heatmaps display the average vigor within each time bin.
-Because vigor was undefined when a fish was not moving, each heatmap shows the mean scaled vigor of the fish that exhibited tail movements within each time bin. The heatmaps therefore describe the intensity of movement among active fish rather than the proportion of fish that moved.
+% Quantify Delay-group CR expression and extinction
+In the Delay group, the CR ratio was lower during ET than during PT and than in the matched unpaired control group (\FIG{fig2} D). This difference shows that the CS acquired the capacity to suppress tail-movement vigor after paired training. By LT, the Delay-group ratio had returned toward its PT value, consistent with extinction during testing.
+% todo add the statistical result for the Delay block comparison
 
-Because vigor is undefined in the absence of movement (Materials and Methods), the heatmaps display the average scaled vigor across fish that exhibited tail movements within each time bin. Consequently, bins in which only a small subset of fish moved represent the average scaled vigor of that active subset, rather than population-wide immobility. Periods when most animals were immobile---such as the post-US immobility phase of the UR following the initial optovin-evoked burst---therefore do not appear uniformly dark, but instead reflect the residual activity of the few individuals that remained moving.
+% Quantify 3sTrace CR expression and extinction
+The 3sTrace group showed the same qualitative pattern in the block-level analysis: the CR ratio was reduced during ET relative to PT and to the matched unpaired control group (\FIG{fig2} E). The reduction was no longer evident in LT, indicating that the learned suppression declined as testing proceeded without the US. Together with the heatmaps, these comparisons show that larvae can form an association when a \SI{3}{\second} stimulus-free interval separates the CS and US.
+% todo add the statistical result for the 3sTrace block comparison
 
-% Delay and 3sTrace
-In the Delay and 3sTrace groups (\FIG{fig2} A,B), CS-US pairing produced a progressive reduction in vigor during training. The CR initially emerged near the expected US time and then shifted earlier during conditioning, becoming apparent soon after CS onset. This suppression persisted into the first test trials but weakened during later testing, consistent with extinction.
-% todo show heatmaps with percentage of active fish per time bin (Sup. Fig. ???)
+% Report the absence of a reliable 10sTrace population effect
+In contrast, the 10sTrace group did not show a statistically reliable ET reduction in CR ratio relative to its PT baseline and matched control under the present analysis (\FIG{fig2} F). The extended trace interval therefore represents a condition in which the current experiment did not detect a consistent population-level conditioned response, rather than a demonstrated upper limit on the larvae's capacity for temporal association.
 
+% region Trial-Resolved Analysis
+% Introduce trial-resolved acquisition and extinction analysis
+\paragraph{Acquisition and Extinction Across Trials}
 
-% Control
-The corresponding control groups showed no sustained CS-locked suppression. Their CS-aligned vigor remained broadly stable across trials, apart from a brief increase during CS presentation. Because US delivery was explicitly unpaired and varied in time across control animals, US-evoked responses were not aligned in the pooled CS-aligned heatmaps.
+% Describe the trial-resolved course of acquisition and extinction
+Trial-resolved CR ratios complemented the block comparisons by showing how the group response developed across the experiment (\FIG{fig2} G--I). In the Delay and 3sTrace groups, the CS-locked reduction emerged during training, was expressed during the first CS-only test trials, and then declined over subsequent test trials. The unpaired controls remained close to their pre-training values across the same phases. These time courses are consistent with gradual acquisition of conditioned suppression and its extinction when the CS was no longer followed by the US.
+% todo specify the trial-resolved statistical analysis, if inferential claims are retained
 
-The unpaired control groups provided a critical baseline for comparison.
-These controls showed no sustained, learning-dependent changes.
-CS-aligned scaled vigor in control animals remained relatively constant throughout the entire experiment, apart from a modest but consistent transient increase during CS presentation (visible as a brief intensity rise in the heatmaps). The UR was not apparent in pooled CS-aligned control data because each fish experienced a distinct control protocol, in which US presentations were explicitly unpaired and temporally varied. Consequently, pooling CS-aligned data across control individuals temporally misaligned the URs, causing them to appear diffuse or attenuated in the population heatmaps.
-US-aligned scaled vigor remained stable in the period preceding the US, showing no systematic anticipatory modulation---activity (lacked any build-up or suppression leading up to US onset). 
-% todo Sup. Fig. with US-aligned data for control
-Therefore, the training phase in the control group of fish did not induce consistent activity locked to CS onset nor US onset across trials (Fig. ??? and Sup. Fig. ???).
+% Summarize the population-level result and separate it from later individual and timing analyses
+The population analyses establish the central behavioral result of this study: Delay conditioning and 3sTrace conditioning produce a CS-locked reduction in tail-movement vigor that is absent in matched unpaired controls and diminishes during testing. The magnitude and timing of this response varied across individual larvae; these features are considered separately below rather than inferred from the population average alone.
 
-\paragraph{Control}
-Across all experimental conditions, the unpaired control groups provided a critical baseline for comparison.
-
-
-% 10sTrace
-The 10sTrace group showed a different pattern. Pooled heatmaps revealed, at most, a weak suppression during the trace interval between CS offset and US onset. This effect was not consistently distinguishable from control responses at the population level, suggesting that the 10-s interval substantially reduced the strength of associative learning.
-
-%! The 10sTrace heatmaps lacked the clear CS-locked suppression seen in shorter traces, showing instead only a modest reduction in vigor during the trace interval.
-
-
-
-
-
-
-\paragraph{Block-Level Statistics and Extinction}
-
-
-
-Our quantitative analysis focused on comparing vigor change at CS onset across three distinct phases, each representing a 5-trial block:
-Pre-Train (PT): The final 5 trials of pre-training, establishing baseline responsiveness.
-Early Test (ET): The first 5 trials of testing, measuring the expression of the learned CR.
-Late Test (LT): The final 5 trials of testing, assessing the extinction of the CR.
-% todo Change abbreviations of experimental blocks of trials
-
-
-
-% Quantify Delay-group CR expression using predefined 5-trial blocks.
-Block-level analysis of the average vigor change at CS onset confirmed robust CR expression in the Delay group. During Early Test (first 5 test trials), vigor significantly decreased at CS onset relative to both the Pre-Train baseline (final 5 pre-train trials) and the Control group. This suppression was transient: by Late Test (final 5 test trials), vigor change returned toward pre-train levels, indicating extinction of the learned response.
-% vigor change at CS onset (still need to find a better name for this)
-
-
-
-
-
-
-\paragraph{Vigor Change at CS Onset Across Trials}
-% Introduce trial-by-trial NV to track the learning trajectory and extinction dynamics.
-To further characterize the learning trajectory and extinction dynamics, we quantified vigor change on a trial-by-trial basis.
-% Describe trial-by-trial CR emergence, timing refinement, persistence, and extinction.
-Trial-by-trial average vigor change at CS onset showed gradual CR acquisition in the Delay group during conditioning. Suppression within the CS--US interval emerged over approximately the first 10 conditioning trials (around overall trial 20). This suppression persisted into the initial testing phase (approximately trials 61--75) and declined across later test trials, consistent with extinction. In contrast, the control group remained near baseline across trials and showed no consistent trial-locked suppression pattern.
-
-% todo Explain choice of CR windows in Materials and Methods (based on Figure 3)
-
-%! todo when saying "rapid" learning, analyze if after a spurious CS-US pairing there is a sudden drop in NV
-
-
-
-
-% This will be mostly in Sup. Fig.?
-
-\paragraph{Vigor Change in US-aligned Data}
-% US aligned Control Data
-To confirm that the learned response was specifically an anticipatory behavior cued by the CS (and not other environmental stimuli), we analyzed control vigor change at CS onset aligned to the US onset during conditioning.
-Control groups for both the Delay and 3sTrace conditions showed vigor change at CS onset fluctuating around 1.0, with no systematic activity patterns emerging before their randomly timed US presentations.
-This behavioral stability in US-aligned control data (also exemplified in pooled scaled vigor heatmaps) strongly indicates that only the explicitly presented CS became predictive of the US. This finding ensures that the learned behavioral changes observed in conditioning groups can be confidently attributed to the specific CS-US contingencies.
-
-
-
-
+% region Control Specificity
+% Test whether violet light alone can act as the US
 \paragraph{Control Specificity: Violet Light Without Optovin}
-% Specificity control: test whether violet light pulse alone can serve as an effective US.
-In a preliminary control experiment, fish experienced Delay-style CS-US pairing with \SI{100}{\milli\second} violet-light pulses but without optovin. Under these conditions, violet light alone did not function as an effective US (Sup. Fig. 3), supporting the specificity of optovin-mediated reinforcement.
 
-\paragraph{Interpretive Bridge: Baseline Stabilization and UR Profile}
-% Keep concise interpretation here; detailed mechanistic interpretation can be expanded in Discussion.
-The optovin-evoked UR appeared biphasic, with an early high-amplitude motor burst followed by a longer immobility phase. This qualitative profile is compatible with a fast escape-like component followed by a delayed inhibitory state and provides context for why maintaining baseline movement was important for CR quantification.
+% Report the violet-light-only control
+In a preliminary control experiment, larvae received Delay-style CS--US pairings with \SI{100}{\milli\second} violet-light pulses in the absence of optovin. Violet light alone did not produce a detectable conditioned response (Sup. Fig. 3). This result supports the conclusion that reinforcement in the assay depends on optovin-mediated photostimulation rather than on the violet light pulse alone.
 
-% todo Sup. Fig. XXXX with UV light only control
-
-
-% todo Sup. Fig. with US-aligned data for control
-
-
-% todo show heatmaps with percentage of active fish per time bin (Sup. Fig. XXXX)
-
-
-% todo Change abbreviations of experimental blocks of trials
-% todo ? How much was the median suppression?
-
-
-
-
-
-
-
-%% endregion Pop. Analysis
+% todo add final figure-panel references, sample sizes, effect sizes, confidence intervals, and exact statistical tests once the analyses are finalized
+% todo consider adding a supplementary heatmap of the proportion of active fish per time bin to complement the active-fish scaled-vigor heatmaps
+% todo confirm the final response window, baseline window, and CR-ratio formula in Materials and Methods

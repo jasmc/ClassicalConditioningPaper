@@ -14,7 +14,7 @@ Shows the specificity control in which larvae undergo delay-style CS–US pairin
 
 ## Supplementary Figure 4 — US-aligned responses in paired and unpaired experiments
 
-Presents behavioral data aligned to US onset to separate the optovin-evoked unconditioned response from the CS-evoked conditioned response. It includes US-aligned views of the representative delay and control larvae shown in Figure 1, responses to short and long US pulses, and population data from the randomized unpaired controls. The paired data show the immediate motor burst and post-US immobility, whereas the controls show no systematic anticipatory increase or suppression before their randomly timed US presentations. These analyses confirm that the learned suppression is locked to the predictive CS–US relationship rather than to other events in the protocol.
+Presents behavioral data aligned to US onset to separate the optovin-evoked unconditioned response from the CS-evoked conditioned response. It includes US-aligned views of the representative Delay, 3sTrace, and control larvae shown in Figure 1, responses to short and long US pulses, and population data from the randomized unpaired controls. The paired data show the immediate motor burst and post-US immobility, whereas the controls show no systematic anticipatory increase or suppression before their randomly timed US presentations. These analyses confirm that the learned suppression is locked to the predictive CS–US relationship rather than to other events in the protocol.
 
 ## Supplementary Figure 5 — Behavioral coverage and quality control for population heatmaps
 

@@ -3,7 +3,10 @@ STILL NEED TO REARRANGE THE FOLLOWING SECTIONS.
 
 STOP READING
 
+% Draft scope: learner classification and individual variation only.
+\subsection{Learner Classification and Individual Variation}
 
+% todo learning criteria
 
 
 % region Learners vs Non-Learners
@@ -12,6 +15,17 @@ STOP READING
 % Example Trace fish
 Analyzing individual fish allowed a detailed examination of response development, inter-individual variability, and subtle behavioral features that might be obscured when data are aggregated. Among exemplar fish, tail movements varied substantially in timing and duration both within and across individuals, highlighting the importance of population-level analyses for identifying consistent patterns.
 
+
+%* 10sTrace
+An exemplar 10sTrace fish displayed a reduction in vigor that was largely confined to the \SI{10}{\second} trace interval and became progressively consolidated with conditioning; in early test trials, this reduction also extended substantially beyond the trace period.
+Despite the lack of a population-level effect, qualitative observations of individual animals (such as the exemplar fish described previously) suggest that some individuals may have successfully acquired the association. Further experiments with larger sample sizes are warranted to definitively establish the capacity of larval zebrafish to form associations over such extended trace intervals.
+% todo highlight the 10sTrace fish from Fig. 1 in the population plots
+
+% Limited learning in the 10sTrace condition at CS onset
+In contrast to the other paradigms, larvae in the 10sTrace condition did not show significant conditioning at the population level.
+Although the experimental group showed a trend towards reduced vigour during the ET phase relative to controls, this difference did not achieve statistical significance with the current sample size.
+Despite the lack of a population-level effect under the number of larvae tested, qualitative observations of individual animals (such as the exemplar fish described previously) suggest that some individuals may have successfully acquired the association.
+% todo highlight the 10sTrace fish from Fig. 1 in the population plots
 
 
 
@@ -38,128 +52,3 @@ Individual data confirmed this trend: most 10sTrace experimental fish had vigor 
 % todo count number of learners in 10sTrace group
 
 % endregion Learners vs Non-Learners
-
-
-
-
-
-%% region CR Dynamics
-
-
-
-
-
-
-
-
-
-%!!! talk about this in Figure 4, when characterizing the CR in learners!
-A comparison between the Delay and trace groups and the respective control fish revealed that only the groups that received the CS-US paired during training developed a consistent behavioural change in response to the CS during the training and testing phases 
-During the first 10 training trials, larvae in the Delay condition showed a progressive reduction in movement vigor within the CS--US interval, emerging after several trials and strengthening with continued training. This conditioned response (CR) became increasingly temporally refined: it initially appeared a few seconds after CS onset, then gradually shifted earlier to align more closely with CS presentation. During early test trials, the suppression often extended beyond CS offset, but it gradually extinguished across testing, with vigor returning to baseline as the CS regained a neutral value.
-Larvae trained with short temporal gaps--- fixed \SI{3}{\second} trace interval (3sTrace)---displayed robust associative learning comparable to that observed in the Delay condition. In both paradigms, the CR first appeared near CS offset, close to the expected US time. As training progressed, the CR shifted earlier to occur shortly after CS onset. During testing, the CR was evident in early trials but extinguished over time, leaving only a mild, startle-like response similar to controls.
-When the trace interval was extended to \SI{10}{\second}, conditioning became substantially more difficult. Heatmaps of pooled scaled vigor revealed only a subtle suppression that developed after several training trials, localized primarily within the trace interval (between CS offset and US onset). This weak and delayed reduction---absent in control fish---suggests that some associative learning can occur even across this extended temporal gap, though with greatly diminished strength.
-
-
-
-
-
-
-\subsection{CR Dynamics Reveal Precise Temporal Expectation of the US in Delay and Short-Trace Conditioning}
-
-To characterize how the CR developed and when it was expressed relative to the expected US, we combined two complementary analyses: (i) block-averaged scaled-vigor traces (10-trial blocks) and (ii) catch-trial traces (CS-only trials embedded in training).
-% todo averaged...?
-
-In the delay condition, CRs emerged rapidly and became both stronger and temporally precise with training. Block averages showed an initial suppression of vigor during the latter part of the CS in the earliest training block (train 1), which strengthened and shifted earlier over subsequent blocks. By late training, suppression began shortly after CS onset and peaked before the expected US time. Catch-trial traces confirmed this timing: CR suppression typically began within a few seconds of CS onset, persisted for about \SIrange{1}{2}{\second} after CS offset, and returned to baseline shortly after the expected US time (Fig. X). During early testing (CS alone), the CR remained robust and time-locked to the predicted US; across test blocks the response shortened and weakened, consistent with extinction (Fig. X).
-
-The and 3sTrace groups displayed qualitatively similar dynamics to delay conditioning but with trace-specific structure. When trace intervals were short ( initially used a \SI{0.5}{\second} gap and was progressively extended; 3sTrace used a fixed \SI{3}{\second} gap), block averages showed a suppression that began during the CS and extended into the stimulus-free interval. With training, the suppression intensified and became focused so that pooled catch-trial data peaked within the trace interval at the predicted US time (Fig. X; Suppl. Fig. Y). These patterns indicate that larvae maintained a CS representation across the gap and developed accurate temporal expectation of US onset. As in delay conditioning, CRs in these groups persisted into early testing and then declined.
-
-The 10sTrace group showed clearly weaker and more variable CRs. Block averages indicated only a modest suppression emerging late in training and persisting into the early test blocks; suppression was largely confined to the long trace interval, whereas scaled vigor during the CS itself stayed near baseline (Fig. X). Pooled catch-trial averages revealed a subtle, diffuse reduction in vigor across the extended trace window that often extended beyond the expected US time. Quantitatively, the 10sTrace group exhibited a statistically significant but attenuated reduction in normalized vigor during the early test phase compared with both pre-train baseline and controls (see Methods and Fig. X), consistent with associative learning that is imprecise in time when the CS--US interval is long.
-
-Across conditions, two consistent themes emerged. First, catch trials isolated a temporally precise CR in delay and short-trace paradigms: suppression was anticipatory (appearing before the expected US) and returned to baseline shortly after the expected US time, demonstrating accurate temporal estimation. Second, single-fish responses were heterogeneous---some individuals showed strong, well-timed CRs while others did not---so pooled averages are complemented by exemplar single-trial traces (Suppl. Fig. Y). Finally, CRs diminished across test blocks in all learned groups, reflecting extinction when the CS was repeatedly presented without the US.
-
-
-
-
-
-
-
-
-
-
-
-% endregion CR Dynamics
-
-
-
-
-
-
-
-
-
-
-%% region NMDAR dependence, ca8 ablation, LTM with puromycin
-
-% region MK-801
-% ** Delay and Trace Conditioning Performance with MK-801
-
-\subsection{Associative Learning is Dependent on NMDA Receptor Function}
-
-To probe the molecular basis of associative learning, I examined the role of NMDARs using the non-competitive antagonist MK-801. The experiment comprised two paradigms: delay conditioning, with MK-801 at 0~\si{\micro\Molar}, 10~\si{\micro\Molar}, or 100~\si{\micro\Molar}, and 3sTrace conditioning, with 0~\si{\micro\Molar} and 100~\si{\micro\Molar}. All test solutions contained 0.2\% DMSO. Control groups received explicitly unpaired CS--US presentations to dissociate associative from non-associative effects.
-
-\paragraph{Delay and Trace Conditioning Performance with MK-801}
-Blocking NMDARs with high-dose MK-801 (100~\si{\micro\Molar}) completely abolished CR acquisition in both delay and 3sTrace paradigms (Fig. X). In the Early Test phase, normalized vigor in these larvae did not differ from Pre-Train or from unpaired controls, indicating a failure to learn. In contrast, 10~\si{\micro\Molar} MK-801 produced no measurable impairment in delay conditioning (Fig. X), demonstrating a clear dose dependence of NMDAR involvement.
-During delay conditioning, larvae exposed to 0~\si{\micro\Molar} or 10~\si{\micro\Molar} MK-801 displayed a consistent reduction in scaled vigor following CS onset from the second training block onward—an expression of a CR that extinguished by the second test block (Fig. X). In Early Test trials, CR duration was slightly prolonged in the 10~\si{\micro\Molar} group (lasting $\approx$~5~s after CS offset) relative to the 0~\si{\micro\Molar} group ($\approx$~2.5~s). By contrast, 100~\si{\micro\Molar} MK-801 disrupted learning entirely: scaled vigor remained at baseline and did not differ from unpaired controls across experimental phases (Figs. X--Y).
-In the 3sTrace paradigm, larvae at 0~\si{\micro\Molar} successfully acquired a CR, whereas those treated with 100~\si{\micro\Molar} failed to do so (Fig. X). Early Test normalized-vigor values of the high-dose group were indistinguishable from Pre-Train and control values. This complete loss of associative suppression confirms that NMDAR signaling is required for both contiguous (delay) and temporally discontiguous (trace) learning.
-Subtle trends toward reduced vigor in some high-dose delay fish suggested incomplete blockade or partial compensation, but these were inconsistent across individuals. Variability among 100~\si{\micro\Molar} unpaired controls likely reflects direct motor effects of MK-801 rather than genuine learning. Only delay-conditioning larvae were pre-incubated with MK-801 prior to training, a difference that may further enhance sensitivity to the drug in that group.
-% todo These results led me to conclude that NMDA receptor function is critical for this form of associative learning in larval zebrafish, as expected from the literature (Hinz et al., 2013).
-
-\paragraph{Motor Effects of MK-801}
-Because I measured the CR as a reduction in tail movement vigor, maintaining a high baseline of spontaneous movement was essential for detecting learning. Sustaining sufficient baseline activity after the \SI{3}{\hour} retention interval posed a major challenge. To address this, I introduced a second priming phase immediately before testing, applying the same principle as the initial priming phase in Chapter 3. Based on pilot experiments, I delivered four \SI{100}{\milli\second} US pulses immediately before the test phase to boost tail activity and enable more reliable CR detection.
-
-% endregion MK-801
-
-
-% region ca8 ablation
-% ** Purkinje Cell Ablation Impairs Associative Learning in Delay and Trace Conditioning
-\subsection*{Purkinje Cell Ablation Impairs Associative Learning in Delay and Trace Conditioning}
-
-To examine the role of cerebellar Purkinje cells (PCs) in associative learning, we performed chemogenetic ablation using Nifurpirinol in ca8$^+$ larvae. Six groups were compared: unpaired control ca8$^+$ and ca8$^-$; delay ca8$^+$ and ca8$^-$; trace ca8$^+$ and ca8$^-$.
-
-At the population level, no control group and no PC-ablated (ca8$^+$) larvae learned in either the delay or trace paradigms. In contrast, delay ca8$^-$ larvae exhibited robust learning, while trace ca8$^-$ larvae learned to a lesser degree, consistent with the known variability in 3~s trace conditioning performance. These results indicate that intact PCs are required for both delay and trace associative learning, with trace learning showing partial acquisition even in the absence of PCs, reflecting the increased difficulty of the task.
-
-% todo mention increased difficulty of trace conditioning seen in Fig2
-
-% endregion ca8 ablation
-
-
-
-% region LTM with puromycin
-% ** 3-h Long-Lasting Memory is Not Blocked by Puromycin Under the Current Protocol
-\subsection{3-h Long-Lasting Memory is Not Blocked by Puromycin Under the Current Protocol}
-
-To examine the protein synthesis dependence of long-term memory (LTM), I tested delay-conditioned larvae after a 3-h retention interval, with or without the translation inhibitor puromycin (\SI{5}{\milli\gram\per\litre}). Larvae conditioned without puromycin exhibited significant conditioned responses (CRs) during the Early Test phase, showing reduced normalized vigor relative to their Pre-Train baseline and to unpaired controls (Fig.~X). Puromycin-treated larvae displayed a similar reduction in vigor, though this effect did not reach statistical significance, possibly due to the smaller sample size (Fig.~X, top). These results indicate that, under the present experimental conditions, memory expression after 3~h is not blocked by puromycin. This may reflect either a form of long-lasting memory that does not depend on new protein synthesis, or incomplete inhibition of translation at this concentration.
-
-\paragraph{Paradigm Modifications for LTM and Memory Savings Assessment}
-To promote LTM formation, we applied spaced training, inserting a \SI{10}{\minute} interval after every 10 training trials (see 5.4. Materials and Methods). A \SI{3}{\hour} stimulus-free retention interval was introduced between training and testing, during which larvae were kept in darkness to minimize sensory stimulation. Baseline tail activity was maintained by a second priming phase immediately before testing, delivering four \SI{100}{\milli\second} US pulses to ensure reliable CR detection.
-
-To test for memory savings, an additional re-training phase (30 paired trials) followed the extinction block (30 CS-only trials). Learning rates during re-training were compared with both the initial acquisition rates and the performance of naive controls trained for the first time.
-
-\paragraph{Three-Hour Memory in Delay Conditioning}
-After the 3-h retention interval, delay-trained larvae without puromycin exhibited robust CRs in the Early Test phase, though the response magnitude was smaller than when testing immediately followed training (Fig.~X). Only a subset of individuals (4 of 27) displayed clear CRs at the single-fish level, consistent with partial retention. Puromycin-treated larvae retained comparable CRs, demonstrating that memory at this timescale was not abolished by protein synthesis inhibition. Because dependence on protein synthesis could not be confirmed, I refer to this as \textit{long-lasting memory} rather than canonical LTM.
-
-\paragraph{No Evidence for Memory Savings}
-Re-training analysis revealed no significant evidence of memory savings. Previously conditioned larvae reacquired CRs at rates comparable to their initial acquisition and to naive controls trained for the first time (Fig.~X). Naive controls did not reach equally low normalized-vigor values within the first \textasciitilde10 trials, suggesting a possible qualitative difference in early learning dynamics. At the individual level, only a minority of naive controls (4 of 19) developed clear CRs during re-training, indicating that prior extinction did not facilitate faster re-learning under these conditions (Fig.~X).
-
-Together, these results suggest that 3-h post-conditioning memory persists without clear protein synthesis dependence and does not produce detectable savings upon re-exposure to paired stimuli.
-% endregion LTM with puromycin
-
-% endregion NMDAR dependence, ca8 ablation, LTM with puromycin
-
-
-
-
-
-% Imaging figure
-%! todo While the main analyses pooled data from fish tested with both white and red CS, a dedicated analysis exclusively on the red CS group confirmed its suitability for subsequent neuroimaging experiments.
-

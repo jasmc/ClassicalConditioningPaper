@@ -1,22 +1,27 @@
 \subsection{Setup, Stimuli, and Experimental Protocols}
+% review: Figure 1 must be redesigned before finalizing this section: it should contain setup (A), protocol (B), raw tail angle (C), vigor calculation (D), a Delay example (E), a primary 3sTrace example (F), and an unpaired-control example (G). Place US-response analyses in supplementary material or later analyses.
 % Intro: motivate optovin as US and present assay design
 TRPA1b-mediated photostimulation with optovin can be delivered with precise timing, evoking robust aversive responses in larval zebrafish~\cite{Wee2019}. We therefore hypothesized that optovin stimulation could serve as an effective unconditioned stimulus (US) for associative learning.
 % todo confirm if reference is appropriate and if there are other references to add
+% review: retain Wee et al. for optovin-evoked nocifensive behavior, and add Kokel et al. (2013), the primary optovin/TRPA1 photochemistry paper, for the mechanism of light-dependent TRPA1 activation.
 % Introduce Delay conditioning as initial validation
 To test this, we developed a classical-conditioning assay for head-fixed larval zebrafish with precise stimulus control and automatic behavioral tracking. As a validation of the optovin-based US, we first tested larvae under Delay conditioning, a classical-conditioning configuration already shown to elicit robust learning in larval zebrafish ~\cite{aizenbergCerebellarDependentLearningLarval2011}.
 % todo add references to previous works on Delay conditioning in zebrafish
 % (Aizenberg and Schuman, 2011; Harmon et al., 2017; Matsuda et al., 2017, Palumbo et al., 2020; Zocchi et al., 2025, Dempsey et al., 2022, Hinz et al., 2013; Zocchi et al., 2025)
+% review: Aizenberg and Schuman (2011) is directly relevant because it used restrained larvae with a visual CS and tail-movement CR. Cite Harmon et al. or Matsuda et al. only when noting that their preparation or readout differs from the present tail-vigor assay.
 
 % region Setup and Stimuli
 \paragraph{Setup, CS, and US}
 % Describe head-fixed preparation and tail tracking
 In the experimental apparatus, a zebrafish larva was head-restrained in an agarose gel, with its eyes and tail free to move. Tail kinematics were recorded by automatically tracking the tail.
+% review: revise "head-restrained in an agarose gel" to "embedded in agarose with the eyes and tail free to move" for conventional preparation terminology.
+% todo cite Fig. 1A and add a head-fixed larval-zebrafish behavioral-tracking reference if this preparation is not fully introduced in Materials and Methods
 % Define CS illumination and duration
 White or red LEDs were used as visual stimuli. A pair of LEDs in front of the larvae provided constant basal illumination; this illumination switched off when the pair of LEDs on the right side turned on (represented in green in \FIG{fig1}A) for \SI{10}{\second}, which served as the conditioned stimulus (CS; Materials and Methods).
 % Define optovin-based US and behavioral response
 Fish medium contained \SI{10}{\micro\Molar} optovin. For conditioning, \SI{100}{\milli\second} violet-light pulses triggered the optovin-mediated stimulation (\FIG{fig1}A; Materials and Methods). This consistently produced vigorous tail responses (Sup. Fig.~1).
 % todo add reference to Sup. Fig. 1
-% todo cite Wee  al., 2019; Kokel
+% todo cite the primary optovin/TRPA1 photostimulation literature here (e.g., Wee et al., 2019; Kokel et al., if appropriate)
 
 % region Experimental Protocols
 \paragraph{Experimental Protocols}
@@ -31,19 +36,38 @@ Overall, conditioning experiments included four main phases (\FIG{fig1} B; Sup. 
 
 % region Novelty and importance of short USs
 % Note optovin elevates baseline activity, motivating protocol adjustments
-Optovin stimuli not only evoked robust and vigorous tail responses (\FIG{fig1} C,D), but also elevated baseline swimming activity to levels unusual for head-fixed larvae (Sup. Fig.~1).
-% todo what are the typical baseline movement rates of head-fixed larvae in the literature? reference supporting this
+Optovin stimuli not only evoked robust and vigorous tail responses (Sup. Fig.~1), but also elevated baseline swimming activity to levels unusual for head-fixed larvae (Sup. Fig.~2 B).
+% todo cite literature reporting typical baseline movement in comparable head-fixed larval-zebrafish preparations, or soften the claim if no direct comparison is available
+% review: Figure 1C,D show the raw readout and vigor calculation, not US-evoked or population baseline activity. Cite dedicated supplementary analyses. If no quantitative external benchmark is available, report only the observed increase rather than calling the level "unusual".
 % todo indicate the numbers of tail movements and time moving
 % Explain rationale for adding short USs to prime and sustain activity
 This was an important consideration for our behavioral readout, which was based on tail movement vigor, and greatly influenced protocol design (Sup. Fig. 2 A; Materials and Methods). We therefore strategically incorporated \SI{50}{\milli\second} long violet light pulses (\textit{short US}) at key points in the protocol to first prime the larvae into an active behavioral state of high baseline movement rate (during the priming/habituation phase) and then to maintain it throughout the experiment. These short USs were never used for conditioning; they were never paired with the CS across trials and were temporally separated from any CS presentation by >30~s (Materials and Methods).
 % todo confirm time between any short US to any CS presentation
+% review: clarify how "4 CS-like stimuli alone" in the protocol relates to short-US delivery during priming; these statements currently appear potentially contradictory.
 % todo swimming activity levels over the experiment (Thesis Figure 2.3 C, D, only for 100 ms, 10 μM)
 % Summarize outcome of short-US strategy on baseline stability
 Together, these measures maintained a stable, high level of tail activity throughout the experiment (Sup. Fig.~2 B) and, as shown below, were essential for detecting the conditioned response.
 % todo (DETAILED PROTOCOL Sup. Fig. 2 A; BASELINE MOVEMENT RATE Sup. Fig. 2 B)
+% review: "essential" implies a direct no-priming comparison. Use "provided the active baseline required for this readout" unless such a necessity experiment is shown.
 % region Delay Protocols
 % Define Delay CS-US timing
 Training was characterized by a (long) US presented \SI{1}{\second} 1 s before the CS offset (for Delay Conditioning), \SI{3}{\second} after the CS offset (for Trace Conditioning with a 3-s trace interval, 3sTrace) or \SI{10}{\second} after the CS offset (10sTrace) (\FIG{fig1} B) in paired CS-US trials during training (\FIG{fig1} XXXX).
+% todo replace \FIG{fig1} XXXX with the final protocol-timing panel reference
+% review: correct the duplicated "1 second 1 s" wording and merge this paragraph with the following trace-definition paragraph; both describe the same timing manipulation.
+
+%! % Define trace conditioning intervals
+% Define trace conditioning intervals
+we investigated trace conditioning, where in paired CS-US trials, CS was temporally separated from US (by 3~s, 3sTrace, or 10~s, 10sTrace; \FIG{fig1} XXXX).
+% todo replace \FIG{fig1} XXXX with the final trace-protocol panel reference; cite trace-conditioning literature in the Introduction rather than repeating it here
+% review: capitalize "We"; keep this sentence only if the preceding timing paragraph is shortened rather than merged into it.
+%! we investigated whether larvae could form associations between temporally separated events using trace conditioning protocols. Under these protocols, during Train, CS was temporally separated from US by \SI{3}{\second} (3sTrace) or \SI{10}{\second} (10sTrace; \FIG{fig1} XXXX).
+%! We additionally designed experimental protocols to test larvae under trace contingencies.
+%! The only difference between the protocols of the conditions we tested was the relative timing of the CS and US during this training phase.
+%! % Trace-conditioning rationale and protocol overview
+%! trace conditioning protocols, where the US is delivered after a delay following CS offset, to investigate whether larvae could form associations between temporally separated events.
+
+
+
 % Describe randomized unpaired Control protocol
 For the control, we designed a CS-US unpaired condition in which CS presentation timings were randomized during the training phase (\FIG{fig1} B; Materials and Methods) to preclude associative learning. To further minimize the possibility of accidental conditioning, we assigned nearly every Control fish a unique, randomized CS presentation schedule (Materials and Methods).
 
@@ -58,12 +82,19 @@ We assessed learning, in this case the capacity to form associations between the
 To gain initial insights into learning-related behavioral changes (appearance of conditioned responses, CRs), we first examined data from individual fish qualitatively.
 % Describe baseline normalization of trial-wise vigor
 Tail movement vigor of individual trials was normalized to the corresponding baseline vigor preceding CS onset (\FIG{fig1} D; Materials and Methods). This normalization accounted for natural oscillations in baseline tail movement across fish and trials (\FIG{fig1} D,E; Materials and Methods).
+% review: Figure 1D should show the vigor calculation; cite Fig. 1E and Fig. 1F only when discussing the respective individual heatmaps.
 % Explain heatmap visualization for qualitative assessment
-The visualization of these vigor change at CS onset values in heatmaps allowed a first qualitative assessment of CS-evoked responses across the experiment.
-% Example Delay fish showing learned suppression during conditioning/testing
-We found a distinct behavioral pattern that developed in some conditioned fish (\FIG{fig1}C--E for an example Delay fish). During the initial pre-train phase, CS presentation did not elicit any detectable modulation of tail vigor. With training, however: vigor during the CS--US interval progressively decreased across trials (\FIG{fig1}D). This reduction became evident early in conditioning and remained stable through the initial testing phase, suggesting the acquisition and short-term retention of a conditioned suppression response.
+Visualizing baseline-normalized vigor as trial-by-time heatmaps allowed an initial qualitative assessment of CS-evoked responses across the experiment (\FIG{fig1} E--G).
+% review: define the exact baseline-normalization formula once in Materials and Methods and use the same terminology in the Figure 1 legend.
+% Primary 3sTrace fish showing learned suppression during conditioning and testing
+We found a distinct behavioral pattern in an example 3sTrace fish (\FIG{fig1} F; final panel assignment to confirm). During pre-training, CS presentation did not elicit a detectable modulation of tail vigor. With training, vigor after CS onset progressively decreased across trials. In the initial test trials, this reduction extended beyond CS offset into the stimulus-free trace interval, consistent with acquisition and short-term expression of a conditioned suppression response.
+% todo confirm the final Fig. 1F 3sTrace heatmap and quantify the response within the trace interval if this temporal claim is retained
+% review: retain this as a qualitative illustration of temporal bridging; the matched population analyses in Results 2, not one example fish, should support the associative-learning claim.
+% Supporting Delay fish showing the corresponding learned suppression
+An example Delay fish (\FIG{fig1} E; final panel assignment to confirm) showed a corresponding reduction in vigor during the CS--US interval that developed with training and was expressed in early testing. This example provides a qualitative comparison with the established Delay configuration, while the 3sTrace fish illustrates the central short-trace result.
 % Contrast Control fish lacking consistent CS-locked suppression
-In contrast, Control fish did not exhibit a consistent CS-locked modulation of vigor across trials (\FIG{fig1}E). Although randomized US timing in the Control protocol complicates strict CS-aligned analysis during conditioning, the anticipatory suppression observed during early testing in Delay fish was completely absent in Control animals. This absence confirms that the observed suppression reflects associative learning driven specifically by the CS--US contingency, rather than non-associative changes in motor output.
+In contrast, the Control fish did not exhibit a consistent CS-locked modulation of vigor across trials (\FIG{fig1} G; final panel assignment to confirm). Although randomized US timing in the Control protocol complicates strict CS-aligned analysis during training, the early-test suppression observed in the paired examples was absent in the control animal. This contrast supports an interpretation based on the CS--US contingency rather than on non-associative changes in motor output.
+% review: one control fish can support a qualitative comparison but cannot establish the contingency interpretation; reserve that conclusion for the matched population-level control analysis.
 % todo (show more single fish in Sup. Fig. X?? or keep it for the identification of learners vs nonlearners?)
 
 
@@ -71,8 +102,9 @@ In contrast, Control fish did not exhibit a consistent CS-locked modulation of v
 % Introduce qualitative features of the optovin-evoked UR
 Inspection of individual fish data also highlighted features of the unconditioned response (UR) to the optovin-mediated US.
 % Update the following comment: % Note post-UR immobility phase and its early-trial prominence
-Tail movements immediately following the US during conditioning trials (\FIG{fig1} D--G US-aligned data for control) differed markedly from pre-US activity, showing distinctly higher frequency and amplitude (\FIG{fig1} C), followed by a phase of immobility. This immobility tended to be most pronounced in the initial conditioning trials---likely reflecting the fish's first encounters with the US.
-% todo as previously described... (Wee et al., 2019)
+Tail movements immediately following the US during conditioning trials (Sup. Fig.~1, US-aligned data) differed markedly from pre-US activity, showing distinctly higher frequency and amplitude, followed by a phase of immobility. This immobility tended to be most pronounced in the initial conditioning trials---likely reflecting the fish's first encounters with the US.
+% todo confirm the supplementary US-aligned panel reference and cite prior optovin-response characterization if the interpretation of post-US immobility is retained
+% review: describe post-US immobility as an observation unless its trial dependence is quantified or supported by a directly relevant source.
 % quantify increased freq. and amp.?
 % quantify immobility phase duration and its decay across trials?
 
