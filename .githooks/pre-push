@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Mirror the exact main commit to Overleaf before pushing it to GitHub.
+[ "$1" = "origin" ] || exit 0
+
+repo_root=$(git rev-parse --show-toplevel) || exit 1
+repo_root_win=$(cygpath -w "$repo_root") || exit 1
+sync_script="${repo_root_win}\\scripts\\sync-overleaf.ps1"
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+    [ "$local_ref" = "refs/heads/main" ] || continue
+    [ "$remote_ref" = "refs/heads/main" ] || continue
+    case "$local_sha" in
+        0000000000000000000000000000000000000000) continue ;;
+    esac
+
+    case "$remote_sha" in
+        0000000000000000000000000000000000000000) ;;
+        *)
+            git merge-base --is-ancestor "$remote_sha" "$local_sha" || {
+                echo "Overleaf sync stopped: origin/main has commits that are not in local main. Fetch and integrate them before pushing." >&2
+                exit 1
+            }
+            ;;
+    esac
+
+    pwsh.exe -NoProfile -File "$sync_script" -Commit "$local_sha" -PreviousCommit "$remote_sha"
+    result=$?
+    [ "$result" -eq 0 ] || exit "$result"
+done
+
+exit 0
